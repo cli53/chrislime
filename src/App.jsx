@@ -3,7 +3,7 @@ import reader from 'react-dom';
 
 class App extends Component {
   render() {
-    <h1>Hello World</h1>
+    return <h1>Hello World</h1>
   }
 };
 

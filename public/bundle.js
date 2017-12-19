@@ -18305,7 +18305,7 @@ var App = function (_Component) {
   _createClass(App, [{
     key: 'render',
     value: function render() {
-      _react2.default.createElement(
+      return _react2.default.createElement(
         'h1',
         null,
         'Hello World'
