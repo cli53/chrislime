@@ -1,11 +1,19 @@
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
   filename: 'index.html',
   inject: 'body'
+});
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+SWPrecacheWebpackPluginConfig = new SWPrecacheWebpackPlugin({
+  cacheIde: 'my-portfolio',
+  filename: 'my-service-worker.js',
+  minify: true,
+  verbose: true,
 })
-const path = require('path');
+
 
 module.exports = {
   entry: path.join(__dirname, '../src', 'index.jsx'),
@@ -27,6 +35,7 @@ module.exports = {
     ]  
   },
   plugins: [
-    HtmlWebpackPluginConfig
+    HtmlWebpackPluginConfig,
+
   ],
 }
