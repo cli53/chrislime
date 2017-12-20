@@ -4,7 +4,7 @@ $font-size: 18px;
 
 @mixin intro{
   line-height: 1.2em;
-  font-size: 6em;
+  font-size: 5em;
 }
 
 * {
@@ -33,6 +33,11 @@ h1 {
 
 h3 {
   background-color: #FFFFFF;
+}
+
+#logo {
+  width:100px;
+  height:100px;
 }
 
 #contact-contain {
