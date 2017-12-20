@@ -8,7 +8,7 @@ const About = ({ giphyCall, giphyArr, giphyChange }) => {
    <div className="search">
       <input type="text" className="searchTerm" placeholder="What are you looking for?" onChange={giphyChange}/>
       <button type="submit" onClick={giphyCall} className="searchButton">
-        Go
+        Find
      </button>
    </div>
 </div>

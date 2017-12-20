@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Routes from './components/routes.jsx';
-import axios from 'axios';
 
 
 class App extends Component {
