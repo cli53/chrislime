@@ -2,7 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
-  return [
+  return (
+    <React.Fragment>
     <ul id='nav-contain'>
       <li className='nav' key={1}>
         <NavLink className='nav' exact={true} to='/'>Logo</NavLink>
@@ -11,5 +12,6 @@ export default function Nav() {
         <NavLink className='nav' exact={true} to='/About'>About</NavLink>
       </li>
     </ul>
-  ]
+    </React.Fragment>
+  )
 }

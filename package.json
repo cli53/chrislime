@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack -w --config ./webpack/webpack.config.js",
-    "webpack-dev": "webpack-dev-server --config ./webpack/webpack.config.js"
+    "webpack-dev": "webpack-dev-server --config ./webpack/webpack.config.js",
+    "start": "node ./server/server.js"
   },
   "keywords": [
     "portfolio"

@@ -1,9 +1,11 @@
 import React from 'react';
 
 export default function home() {
-  return [
+  return (
+  <React.Fragment>
   <center>
-  <h1>Potatoes Potate</h1>
+  <h1>Big Mood</h1>
   </center>
-  ];
+  </React.Fragment>
+  );
 }

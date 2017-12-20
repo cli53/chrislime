@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
   filename: 'index.html',
-  inject: 'body'
+  inject: 'body' //inject scripts before body closing tag
 });
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 SWPrecacheWebpackPluginConfig = new SWPrecacheWebpackPlugin({
@@ -40,8 +40,10 @@ module.exports = {
     }
     ]  
   },
+  devServer: { historyApiFallback: true },
+  devtool: 'source-map',
   plugins: [
     HtmlWebpackPluginConfig,
-
+    SWPrecacheWebpackPluginConfig
   ],
 }

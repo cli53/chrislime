@@ -1,6 +1,10 @@
+$primary-color: #39383a;
+$font-size: 18px;
+
 * {
-  color: #39383a;
+  color: $primary-color;
   background-color:#f1fffd;
+  padding: 0 0.2em;
 }
 
 #nav-contain {
