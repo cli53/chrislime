@@ -1,10 +1,11 @@
 import React from 'react';
+import Hero from './Hero.jsx';
 
-export default function home() {
+export default function Home() {
   return (
   <React.Fragment>
   <center>
-  <h1>Big Mood</h1>
+  <Hero/>
   </center>
   </React.Fragment>
   );

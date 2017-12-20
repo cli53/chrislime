@@ -6,15 +6,15 @@ import About from './About.jsx';
 import Home from './Home.jsx';
 import Contact from './Contact.jsx';
 
-export default function routes() {
+export default function routes({ giphyArr, giphyCall, contactVis, contactBar, giphyChange }) {
   return (
   <React.Fragment>
   <Header/>
   <Switch>
-    <Route exact path='/About' render={()=> <About/>} />
+    <Route exact path='/About' render={()=> <About giphyArr={giphyArr} giphyCall={giphyCall} giphyChange={giphyChange}/>} />
     <Route exact path='/' render={()=> <Home/>} />    
   </Switch>
-  <Contact/>
+  <Contact contactVis={contactVis} contactBar={contactBar}/>
   </React.Fragment>
   )
 }

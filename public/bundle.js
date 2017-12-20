@@ -2496,7 +2496,7 @@ var _App = __webpack_require__(36);
 
 var _App2 = _interopRequireDefault(_App);
 
-__webpack_require__(81);
+__webpack_require__(82);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23429,7 +23429,7 @@ var _Home = __webpack_require__(79);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Contact = __webpack_require__(80);
+var _Contact = __webpack_require__(81);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -23546,6 +23546,10 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Bio = __webpack_require__(80);
+
+var _Bio2 = _interopRequireDefault(_Bio);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function home() {
@@ -23555,17 +23559,40 @@ function home() {
     _react2.default.createElement(
       'center',
       null,
-      _react2.default.createElement(
-        'h1',
-        null,
-        'Big Mood'
-      )
+      _react2.default.createElement(_Bio2.default, null)
     )
   );
 }
 
 /***/ }),
 /* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Bio = function Bio() {
+  return _react2.default.createElement(
+    'h1',
+    null,
+    'Hi. I am Chris. Frontend-Engineer with a main focus on UI Design and Accessibility'
+  );
+};
+
+exports.default = Bio;
+
+/***/ }),
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23584,20 +23611,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Contact() {
   return _react2.default.createElement(
-    'h1',
-    null,
-    'Con'
+    'div',
+    { id: 'contact-contain' },
+    _react2.default.createElement(
+      'h1',
+      null,
+      'Contact'
+    )
   );
 }
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(82);
+var content = __webpack_require__(83);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23605,7 +23636,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(84)(content, options);
+var update = __webpack_require__(85)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -23622,21 +23653,21 @@ if(false) {
 }
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(83)(undefined);
+exports = module.exports = __webpack_require__(84)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "* {\n  color: #39383a;\n  background-color: #f1fffd;\n  padding: 0 0.2em; }\n\n#nav-contain {\n  display: flex;\n  justify-content: space-between; }\n\n.nav {\n  text-decoration: none;\n  list-style: none;\n  font-size: 32px; }\n\nh1 {\n  font-size: 299px; }\n", ""]);
+exports.push([module.i, "* {\n  color: #39383a;\n  background-color: #f1fffd;\n  padding: 0 0.2em; }\n\n#nav-contain {\n  display: flex;\n  justify-content: space-between; }\n\n.nav {\n  text-decoration: none;\n  list-style: none;\n  font-size: 32px; }\n\nh1 {\n  line-height: 1.2em;\n  font-size: 6em;\n  width: 50%; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports) {
 
 /*
@@ -23718,7 +23749,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -23774,7 +23805,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(85);
+var	fixUrls = __webpack_require__(86);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -24090,7 +24121,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports) {
 
 
