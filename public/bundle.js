@@ -23560,9 +23560,9 @@ function Nav() {
 
 /***/ }),
 /* 78 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
+module.exports = __webpack_require__.p + "3fc224660c80e053499278efb60c4398.png";
 
 /***/ }),
 /* 79 */
