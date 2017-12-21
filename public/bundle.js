@@ -2495,7 +2495,7 @@ var _App = __webpack_require__(35);
 
 var _App2 = _interopRequireDefault(_App);
 
-__webpack_require__(83);
+__webpack_require__(85);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23466,15 +23466,15 @@ var _App = __webpack_require__(35);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _About = __webpack_require__(78);
+var _About = __webpack_require__(79);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Home = __webpack_require__(79);
+var _Home = __webpack_require__(80);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Contact = __webpack_require__(82);
+var _Contact = __webpack_require__(84);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -23490,16 +23490,20 @@ function routes(_ref) {
   return _react2.default.createElement(
     _react2.default.Fragment,
     null,
-    _react2.default.createElement(_Header2.default, null),
     _react2.default.createElement(
-      _reactRouterDom.Switch,
-      null,
-      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/About', render: function render() {
-          return _react2.default.createElement(_About2.default, { giphyArr: giphyArr, giphyCall: giphyCall, giphyChange: giphyChange });
-        } }),
-      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', render: function render() {
-          return _react2.default.createElement(_Home2.default, null);
-        } })
+      'main',
+      { id: 'main-frame' },
+      _react2.default.createElement(_Header2.default, null),
+      _react2.default.createElement(
+        _reactRouterDom.Switch,
+        null,
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/About', render: function render() {
+            return _react2.default.createElement(_About2.default, { giphyArr: giphyArr, giphyCall: giphyCall, giphyChange: giphyChange });
+          } }),
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', render: function render() {
+            return _react2.default.createElement(_Home2.default, null);
+          } })
+      )
     ),
     _react2.default.createElement(_Contact2.default, { contactVis: contactVis, contactBar: contactBar })
   );
@@ -23538,7 +23542,7 @@ function Nav() {
         _react2.default.createElement(
           _reactRouterDom.NavLink,
           { className: 'nav', exact: true, to: '/' },
-          _react2.default.createElement('img', { id: 'logo', src: '../../images/logo.svg', alt: 'logo' })
+          _react2.default.createElement('img', { id: 'logo', src: __webpack_require__(78), alt: 'logo' })
         )
       ),
       _react2.default.createElement(
@@ -23546,7 +23550,7 @@ function Nav() {
         { className: 'nav', key: 2 },
         _react2.default.createElement(
           _reactRouterDom.NavLink,
-          { className: 'nav', exact: true, to: '/About' },
+          { className: 'nav', id: 'About', exact: true, to: '/About' },
           'About'
         )
       )
@@ -23556,6 +23560,12 @@ function Nav() {
 
 /***/ }),
 /* 78 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
+
+/***/ }),
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23607,7 +23617,7 @@ var About = function About(_ref) {
 exports.default = About;
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23622,9 +23632,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Hero = __webpack_require__(80);
+var _Hero = __webpack_require__(81);
 
 var _Hero2 = _interopRequireDefault(_Hero);
+
+var _Body = __webpack_require__(83);
+
+var _Body2 = _interopRequireDefault(_Body);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23636,37 +23650,10 @@ function Home() {
       'center',
       null,
       _react2.default.createElement(_Hero2.default, null)
-    )
+    ),
+    _react2.default.createElement(_Body2.default, null)
   );
 }
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Intro = __webpack_require__(81);
-
-var _Intro2 = _interopRequireDefault(_Intro);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//In the Home
-var Hero = function Hero() {
-  return [_react2.default.createElement(_Intro2.default, { key: 'intro' })];
-};
-
-exports.default = Hero;
 
 /***/ }),
 /* 81 */
@@ -23683,10 +23670,41 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Intro = __webpack_require__(82);
+
+var _Intro2 = _interopRequireDefault(_Intro);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//In the Home
+var Hero = function Hero() {
+  return _react2.default.createElement(
+    'div',
+    { id: 'hero' },
+    _react2.default.createElement(_Intro2.default, { key: 'intro' })
+  );
+};
+
+exports.default = Hero;
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //In the hero
-
 var Intro = function Intro() {
   return _react2.default.createElement(
     'h1',
@@ -23698,7 +23716,39 @@ var Intro = function Intro() {
 exports.default = Intro;
 
 /***/ }),
-/* 82 */
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Body = function Body() {
+  return [_react2.default.createElement(
+    'h1',
+    { id: 'body-bio' },
+    'I design and develop experiences that make people\'s lives ',
+    _react2.default.createElement(
+      'strong',
+      null,
+      'simple.'
+    )
+  )];
+};
+
+exports.default = Body;
+
+/***/ }),
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23731,13 +23781,13 @@ function Contact(_ref) {
 }
 
 /***/ }),
-/* 83 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(84);
+var content = __webpack_require__(86);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23745,7 +23795,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(86)(content, options);
+var update = __webpack_require__(88)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -23762,21 +23812,21 @@ if(false) {
 }
 
 /***/ }),
-/* 84 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(85)(undefined);
+exports = module.exports = __webpack_require__(87)(undefined);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Nunito);", ""]);
 
 // module
-exports.push([module.i, "* {\n  font-family: \"Nunito\";\n  color: #39383a;\n  background-color: #E7E7E7; }\n\n#nav-contain {\n  display: flex;\n  justify-content: space-between;\n  padding: 0 0.2em; }\n  #nav-contain .nav {\n    text-decoration: none;\n    list-style: none;\n    font-size: 32px; }\n\nh1 {\n  line-height: 1.2em;\n  font-size: 5em;\n  width: 50%; }\n\nh3 {\n  background-color: #FFFFFF; }\n\n#logo {\n  width: 100px;\n  height: 100px; }\n\n#contact-contain {\n  position: fixed;\n  bottom: 0;\n  margin: 0 auto;\n  height: 75px;\n  width: 100%;\n  background-color: #FFFFFF;\n  text-align: center;\n  transition: height 400ms ease-in; }\n\n#contact-contain.slideIn {\n  height: 200px; }\n\n.search {\n  width: 100%;\n  position: relative; }\n\n.searchTerm {\n  float: left;\n  width: 100%;\n  border: 3px solid #00B4CC;\n  padding: 5px;\n  height: 20px;\n  border-radius: 5px;\n  outline: none;\n  color: #9DBFAF; }\n\n.searchTerm:focus {\n  color: #00B4CC; }\n\n.searchButton {\n  position: absolute;\n  right: -50px;\n  width: 40px;\n  height: 36px;\n  border: 1px solid #00B4CC;\n  background: #00B4CC;\n  text-align: center;\n  color: #fff;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 20px; }\n\n/*Resize the wrap to see the search bar change!*/\n.wrap {\n  width: 30%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%); }\n", ""]);
+exports.push([module.i, "* {\n  font-family: \"Nunito\";\n  color: #39383a;\n  background-color: #E7E7E7; }\n\n#nav-contain {\n  display: flex;\n  justify-content: space-between;\n  padding: 0 0.5em;\n  margin: 0; }\n  #nav-contain .nav {\n    text-decoration: none;\n    list-style: none;\n    font-size: 24px; }\n\nh1 {\n  line-height: 1.2em;\n  font-size: 5em;\n  width: 50%; }\n\nh3 {\n  background-color: #FFFFFF; }\n\n#logo {\n  width: 100px;\n  height: 100px; }\n\n#main-frame {\n  margin-left: 3em;\n  margin-right: 3em; }\n\n#hero {\n  padding-bottom: 5em; }\n\n#contact-contain {\n  position: fixed;\n  bottom: 0;\n  margin: 0 auto;\n  height: 75px;\n  width: 100%;\n  background-color: #FFFFFF;\n  text-align: center;\n  transition: height 400ms ease-in; }\n\n#contact-contain.slideIn {\n  height: 200px; }\n\n.search {\n  width: 100%;\n  position: relative; }\n\n.searchTerm {\n  float: left;\n  width: 100%;\n  border: 3px solid #00B4CC;\n  padding: 5px;\n  height: 20px;\n  border-radius: 5px;\n  outline: none;\n  color: #9DBFAF; }\n\n.searchTerm:focus {\n  color: #00B4CC; }\n\n.searchButton {\n  position: absolute;\n  right: -50px;\n  width: 40px;\n  height: 36px;\n  border: 1px solid #00B4CC;\n  background: #00B4CC;\n  text-align: center;\n  color: #fff;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 20px; }\n\n/*Resize the wrap to see the search bar change!*/\n.wrap {\n  width: 30%;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%); }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 85 */
+/* 87 */
 /***/ (function(module, exports) {
 
 /*
@@ -23858,7 +23908,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 86 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -23914,7 +23964,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(87);
+var	fixUrls = __webpack_require__(89);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -24230,7 +24280,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 87 */
+/* 89 */
 /***/ (function(module, exports) {
 
 

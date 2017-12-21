@@ -9,11 +9,13 @@ import Contact from './Contact.jsx';
 export default function routes({ giphyArr, giphyCall, contactVis, contactBar, giphyChange }) {
   return (
   <React.Fragment>
+  <main id='main-frame'>
   <Header/>
   <Switch>
     <Route exact path='/About' render={()=> <About giphyArr={giphyArr} giphyCall={giphyCall} giphyChange={giphyChange}/>} />
     <Route exact path='/' render={()=> <Home/>} />    
   </Switch>
+  </main>
   <Contact contactVis={contactVis} contactBar={contactBar}/>
   </React.Fragment>
   )

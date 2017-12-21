@@ -2,9 +2,9 @@
 $primary-color: #39383a;
 $primary-font: 'Nunito';
 $primary-bgc: #E7E7E7;
-$font-size: 18px;
+$font-size: 24px;
 
-@mixin intro{
+@mixin headers-1{
   line-height: 1.2em;
   font-size: 5em;
 }
@@ -19,16 +19,17 @@ $font-size: 18px;
 #nav-contain {
   display: flex;
   justify-content: space-between;
-  padding: 0 0.2em;
+  padding: 0 0.5em;
+  margin: 0;
   .nav {
     text-decoration: none;
     list-style: none;
-    font-size: 32px;
+    font-size: $font-size;
     }
   }
 
 h1 {
-  @include intro;
+  @include headers-1;
   width: 50%;
 }
 
@@ -40,6 +41,19 @@ h3 {
   width:100px;
   height:100px;
 }
+
+#main-frame {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#hero {
+  padding-bottom: 5em;
+}
+
+// #intro {
+//   margin-bottom: 2em;
+// }
 
 #contact-contain {
   position: fixed;
@@ -64,6 +78,8 @@ h3 {
 
 
 
+
+//ABOUT
 .search {
   width: 100%;
   position: relative

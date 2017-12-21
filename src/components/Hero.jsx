@@ -3,9 +3,11 @@ import Intro from './Intro.jsx';
 
 //In the Home
 const Hero = () => {
-  return [
+  return (
+    <div id='hero'>
     <Intro key='intro'/>
-  ]
+    </div>
+  )
 }
 
 export default Hero;

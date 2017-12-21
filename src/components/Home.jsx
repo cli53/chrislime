@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './Hero.jsx';
+import Body from './Body.jsx';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
   <center>
   <Hero/>
   </center>
+  <Body/>
   </React.Fragment>
   );
 }
