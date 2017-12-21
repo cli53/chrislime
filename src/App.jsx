@@ -20,9 +20,11 @@ class App extends Component {
     .then(res => {
         return res.json();
     }).then(data => {
-        this.setState({
-          giphyArr: data.data
-        })
+      this.setState((prevState, props) => {
+        console.log(prevState)
+        console.log(props)
+        return {giphyArr: data.data}
+      })
     }).catch(err => {
         console.log(err);
     });

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack -w --config ./webpack/webpack.config.js",
     "webpack-dev": "webpack-dev-server --config ./webpack/webpack.config.js",
-    "start": "node ./server/server.js"
+    "start": "node ./server.js"
   },
   "keywords": [
     "portfolio"
@@ -17,6 +17,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "css-loader": "^0.28.7",
+    "express": "^4.16.2",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "react": "^16.2.0",
