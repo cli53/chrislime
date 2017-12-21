@@ -14,7 +14,6 @@ class App extends Component {
     this.giphyCall = this.giphyCall.bind(this);
     this.giphyChange = this.giphyChange.bind(this);
   }
-  // 1407a89874814d21a7d7c728b08138d5
     giphyCall(){
    fetch(`https://api.giphy.com/v1/gifs/search?api_key=1407a89874814d21a7d7c728b08138d5&q=${this.state.giphyInput}&limit=5&offset=0&rating=G&lang=en`)
     .then(res => {
