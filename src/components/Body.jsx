@@ -1,8 +1,9 @@
 import React from 'react';
+import Bio from './Bio.jsx'
 
 const Body = () => {
   return [
-    <h1 id ='body-bio'>I design and develop experiences that make people's lives <strong>simple.</strong></h1>
+    <Bio/>
   ]
 };
 

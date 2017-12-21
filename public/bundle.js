@@ -2493,7 +2493,7 @@ var _App = __webpack_require__(35);
 
 var _App2 = _interopRequireDefault(_App);
 
-__webpack_require__(85);
+__webpack_require__(86);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23472,7 +23472,7 @@ var _Home = __webpack_require__(80);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Contact = __webpack_require__(84);
+var _Contact = __webpack_require__(85);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -23731,10 +23731,38 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Bio = __webpack_require__(84);
+
+var _Bio2 = _interopRequireDefault(_Bio);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Body = function Body() {
-  return [_react2.default.createElement(
+  return [_react2.default.createElement(_Bio2.default, null)];
+};
+
+exports.default = Body;
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//In the about
+var Bio = function Bio() {
+  return _react2.default.createElement(
     'h1',
     { id: 'body-bio' },
     'I design and develop experiences that make people\'s lives ',
@@ -23743,13 +23771,13 @@ var Body = function Body() {
       null,
       'simple.'
     )
-  )];
+  );
 };
 
-exports.default = Body;
+exports.default = Bio;
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23782,13 +23810,13 @@ function Contact(_ref) {
 }
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(86);
+var content = __webpack_require__(87);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23796,7 +23824,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(88)(content, options);
+var update = __webpack_require__(89)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -23813,10 +23841,10 @@ if(false) {
 }
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(87)(undefined);
+exports = module.exports = __webpack_require__(88)(undefined);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Nunito);", ""]);
 
@@ -23827,7 +23855,7 @@ exports.push([module.i, "* {\n  font-family: \"Nunito\";\n  color: #39383a;\n  b
 
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports) {
 
 /*
@@ -23909,7 +23937,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -23965,7 +23993,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(89);
+var	fixUrls = __webpack_require__(90);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -24281,7 +24309,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports) {
 
 
