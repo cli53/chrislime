@@ -53,6 +53,11 @@ module.exports = {
           loader: 'image-webpack-loader',
           options: {
             query: {
+              pngquant: {
+                quality: '65-90',
+                speed: 4,
+                input: Buffer
+              },
               mozjpeg: {
                 progressive: true,
               },
