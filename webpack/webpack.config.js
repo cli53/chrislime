@@ -74,7 +74,7 @@ module.exports = {
     }
     ]  
   },
-  devServer: { historyApiFallback: true },
+  // devServer: { historyApiFallback: true },
   devtool: 'source-map',
   plugins: [
     HtmlWebpackPluginConfig,

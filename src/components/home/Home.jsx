@@ -1,6 +1,6 @@
 import React from 'react';
-import Hero from './Hero.jsx';
-import Body from './Body.jsx';
+import Hero from './hero/Hero.jsx';
+import Body from './body/Body.jsx';
 
 export default function Home() {
   return (
