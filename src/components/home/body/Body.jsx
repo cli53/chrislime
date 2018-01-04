@@ -13,7 +13,6 @@ const Body = () => {
     <Login/>
     </ErrorBoundary>
     </React.Fragment>
-    
 )
 };
 

@@ -10,7 +10,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static('public'));
 
 
-
 app.post('/verify', (req, res) => {
   console.log(req.body)
   if (req.body.username === 'chris' && req.body.password === 'li') {
