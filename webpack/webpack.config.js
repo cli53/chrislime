@@ -34,8 +34,9 @@ module.exports = {
     {
       test: /\.(jpe?g|png|gif|svg)$/i,
       use: [
+        //  file-loader outputs image files and returns paths to them instead of inlining. This technique works with other assets types, such as fonts
         // {
-        //   loader: 'file-loader',
+        //   loader: 'file-loader', 
         //   options: {
         //     query: {
         //       name:'assets/[name].[ext]'
@@ -43,9 +44,9 @@ module.exports = {
         //   }
         // },
         {
-          loader: "url-loader",
+          loader: "url-loader", //The url-loader works like the file-loader, but can return a DataURL if the file is smaller than a byte limit. It emits your images as base64 strings within your JavaScript bundles. The process decreases the number of requests needed while growing the bundle size. It comes with a limit option that can be used to defer image generation to file-loader after a certain limit's reached. This way you can inline small files to your JavaScript bundles while generating separate files for the bigger ones.
           options: {
-            limit: 25000,
+            limit: 8192, // setting a limit requires file-loader because that's the default fallback if it reaches over limit
             }
         },
         {
