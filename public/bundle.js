@@ -3162,7 +3162,7 @@ var _App = __webpack_require__(41);
 
 var _App2 = _interopRequireDefault(_App);
 
-__webpack_require__(96);
+__webpack_require__(97);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23553,11 +23553,11 @@ var _Home = __webpack_require__(81);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Secret = __webpack_require__(94);
+var _Secret = __webpack_require__(95);
 
 var _Secret2 = _interopRequireDefault(_Secret);
 
-var _Footer = __webpack_require__(95);
+var _Footer = __webpack_require__(96);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -23959,6 +23959,10 @@ var _ErrorBoundary = __webpack_require__(42);
 
 var _ErrorBoundary2 = _interopRequireDefault(_ErrorBoundary);
 
+var _Email = __webpack_require__(94);
+
+var _Email2 = _interopRequireDefault(_Email);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Body = function Body() {
@@ -23970,7 +23974,8 @@ var Body = function Body() {
       null,
       _react2.default.createElement(_Bio2.default, null),
       _react2.default.createElement(_Projects2.default, null),
-      _react2.default.createElement(_Login2.default, null)
+      _react2.default.createElement(_Login2.default, null),
+      _react2.default.createElement(_Email2.default, null)
     )
   );
 };
@@ -24335,6 +24340,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = Email;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Email() {
+  return _react2.default.createElement(
+    'h1',
+    null,
+    'Hello'
+  );
+}
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -24405,7 +24436,7 @@ var Secret = function (_Component) {
 exports.default = Secret;
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24466,13 +24497,13 @@ function Contact(_ref) {
 }
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(97);
+var content = __webpack_require__(98);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -24480,7 +24511,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(99)(content, options);
+var update = __webpack_require__(100)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -24497,10 +24528,10 @@ if(false) {
 }
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(98)(undefined);
+exports = module.exports = __webpack_require__(99)(undefined);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Nunito);", ""]);
 
@@ -24511,7 +24542,7 @@ exports.push([module.i, "* {\n  font-family: \"Nunito\";\n  color: #39383a;\n  b
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports) {
 
 /*
@@ -24593,7 +24624,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -24649,7 +24680,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(100);
+var	fixUrls = __webpack_require__(101);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -24965,7 +24996,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports) {
 
 

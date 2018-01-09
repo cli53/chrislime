@@ -18,6 +18,10 @@ app.post('/verify', (req, res) => {
   res.sendStatus(400)
 })
 
+app.get('/email', (req, res) => {
+  console.log(req.body)
+})
+
 app.get('*', (request, response) => {
   response.sendFile(path.resolve(__dirname, './src/', 'index.html'));
 });
