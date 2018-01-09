@@ -12,7 +12,7 @@ const Body = () => {
     <Bio/>
     <Projects/>
     <Login/>
-    <Email/>
+    {/* <Email/> */}
     </ErrorBoundary>
     </React.Fragment>
 )

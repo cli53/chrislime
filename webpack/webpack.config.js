@@ -6,13 +6,6 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   filename: 'index.html',
   inject: 'body' //inject scripts before body closing tag
 });
-const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
-SWPrecacheWebpackPluginConfig = new SWPrecacheWebpackPlugin({
-  cacheIde: 'my-portfolio',
-  filename: 'my-service-worker.js',
-  minify: true,
-  verbose: true,
-})
 
 
 module.exports = {
@@ -41,13 +34,19 @@ module.exports = {
     {
       test: /\.(jpe?g|png|gif|svg)$/i,
       use: [
+        // {
+        //   loader: 'file-loader',
+        //   options: {
+        //     query: {
+        //       name:'assets/[name].[ext]'
+        //     }
+        //   }
+        // },
         {
-          loader: 'file-loader',
+          loader: "url-loader",
           options: {
-            query: {
-              name:'assets/[name].[ext]'
+            limit: 25000,
             }
-          }
         },
         {
           loader: 'image-webpack-loader',
@@ -78,6 +77,6 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     HtmlWebpackPluginConfig,
-    SWPrecacheWebpackPluginConfig
+    // SWPrecacheWebpackPluginConfig
   ],
 }
