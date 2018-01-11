@@ -1,5 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// Without ExtractTextPlugin, The current solution doesn't allow to cache CSS. You can also get a Flash of Unstyled Content (FOUC). FOUC happens because the browser takes a while to load JavaScript and the styles would be applied only then. Separating CSS to a file of its own avoids the problem by letting the browser to manage it separately.
+// It moves all the required *.css modules in entry chunks into a separate CSS file. So your styles are no longer inlined into the JS bundle, but in a separate CSS file (styles.css). If your total stylesheet volume is big, it will be faster because the CSS bundle is loaded in parallel to the JS bundle.
+const ExtractTextPluginConfig = new ExtractTextPlugin('styles.css');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
@@ -16,20 +20,17 @@ module.exports = {
     },
   module : {
     rules: [
-        {
+      {
       test: /\.jsx?$/,
       loader: 'babel-loader',
       exclude: /node_modules/,
       },
       {
-        test: /\.scss$/,
-        use: [{
-            loader: "style-loader" // creates style nodes from JS strings
-        }, {
-            loader: "css-loader" // translates CSS into CommonJS
-        }, {
-            loader: "sass-loader" // compiles Sass to CSS
-        }]
+      test: /\.scss$/,
+      use: ExtractTextPlugin.extract({
+        fallback: "style-loader",
+        use: ['css-loader', 'sass-loader']
+      })
     },
     {
       test: /\.(jpe?g|png|gif|svg)$/i,
@@ -75,9 +76,21 @@ module.exports = {
     ]  
   },
   // devServer: { historyApiFallback: true },
-  devtool: 'source-map',
+  // Any eval is for dev env
+  // Any cheap or inline is for special cases like 3rd party tools
+  // Any
+  devtool: 'nosources-source-map',
   plugins: [
     HtmlWebpackPluginConfig,
+    ExtractTextPluginConfig,
     // SWPrecacheWebpackPluginConfig
   ],
 }
+
+// [{
+//   loader: "style-loader" // creates style nodes from JS strings
+// }, {
+//   loader: "css-loader" // translates CSS into CommonJS
+// }, {
+//   loader: "sass-loader" // compiles Sass to CSS
+// }]
