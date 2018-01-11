@@ -1,5 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const UglifyJsPluginConfig = new UglifyJsPlugin({
+  sourceMap: true,
+});
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // Without ExtractTextPlugin, The current solution doesn't allow to cache CSS. You can also get a Flash of Unstyled Content (FOUC). FOUC happens because the browser takes a while to load JavaScript and the styles would be applied only then. Separating CSS to a file of its own avoids the problem by letting the browser to manage it separately.
 // It moves all the required *.css modules in entry chunks into a separate CSS file. So your styles are no longer inlined into the JS bundle, but in a separate CSS file (styles.css). If your total stylesheet volume is big, it will be faster because the CSS bundle is loaded in parallel to the JS bundle.
@@ -83,6 +87,7 @@ module.exports = {
   plugins: [
     HtmlWebpackPluginConfig,
     ExtractTextPluginConfig,
+    UglifyJsPluginConfig,
     // SWPrecacheWebpackPluginConfig
   ],
 }
