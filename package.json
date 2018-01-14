@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack -w --config ./webpack/webpack.config.js",
     "webpack-dev": "webpack-dev-server --config ./webpack/webpack.config.js",
-    "start": "webpack --config ./webpack/webpack.config.js && node server.js",
+    "start": "webpack --config ./webpack/webpack.config.js && nodemon server.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

@@ -15,7 +15,9 @@ app.post('/verify', (req, res) => {
   if (req.body.username === 'chris' && req.body.password === 'li') {
   res.send('success');
   }
+  else {
   res.sendStatus(400)
+  }
 })
 
 app.get('/email', (req, res) => {
