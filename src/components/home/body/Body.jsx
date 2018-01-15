@@ -8,12 +8,16 @@ import Email from './Email.jsx';
 const Body = () => {
   return (
     <React.Fragment>
-    <ErrorBoundary>
+    <div id='mid-sec'>
     <Bio/>
+    </div>
+    <main>
+    <ErrorBoundary>
     <Projects/>
     <Login/>
     {/* <Email/> */}
     </ErrorBoundary>
+    </main>
     </React.Fragment>
 )
 };

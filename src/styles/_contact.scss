@@ -1,0 +1,24 @@
+#contact-contain {
+    font-weight: 50;
+    position: fixed;
+    bottom: 0;
+    margin: 0 25%;
+    height: 50px;
+    width: 50%;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    text-align: center;
+    transition: height 400ms ease-in;
+}
+
+.contacts-info {
+    font-weight: bold;
+}
+  
+
+    
+#contact-contain.slideIn {
+    // transform: translateY(90px);
+    height:125px;
+}
+  

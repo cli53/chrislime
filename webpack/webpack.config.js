@@ -79,11 +79,11 @@ module.exports = {
     }
     ]  
   },
-  // devServer: { historyApiFallback: true },
+  devServer: { historyApiFallback: true },
   // Any eval is for dev env
   // Any cheap or inline is for special cases like 3rd party tools
   // Any
-  devtool: 'nosources-source-map',
+  // devtool: 'nosources-source-map',
   plugins: [
     HtmlWebpackPluginConfig,
     ExtractTextPluginConfig,

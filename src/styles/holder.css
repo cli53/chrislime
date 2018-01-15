@@ -1,0 +1,202 @@
+/* #nav-contain {
+  //   display: flex;
+  //   justify-content: space-between;
+    
+  //   padding: 0 0.5em;
+  //   margin: 0;
+  //   .nav {
+  //     text-decoration: none;
+  //     padding-top: 1.2em;
+  //     list-style: none;
+  //     font-size: $font-size;
+  //     }
+  //   }
+  
+  // h1 {
+  //   @include headers-1;
+  //   width: 50%;
+  // }
+  
+  // #body-bio {
+  //   line-height: 1.2em;
+  //   font-size: 5em;
+  // }
+  
+  // #login-form {
+  //  display: flex;
+  //  justify-content: center;
+  //  padding: 3em;
+  //  margin: 4em;
+  // }
+  
+  // #projects-sec {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  // }
+  
+  // #FCS-article {
+  //   display: flex;
+  //   flex-direction: start;
+  //   justify-content: space-between;
+  // }
+  
+  // #FF-article {
+  //   display: flex;
+  //   flex-direction: start;
+  //   justify-content: space-between;
+  // }
+  
+  // #Helium-article {
+  //   display: flex;
+  //   flex-direction: start;
+  
+  //   justify-content: space-between;
+  // }
+  
+  // #mid-sec {
+  //   display: flex;
+  //   justify-content: flex-start;
+  // }
+  
+  // .article-des {
+  //   padding-left: 3em;
+  // }
+  
+  // #logo {
+  //   width:100px;
+  //   height:100px;
+  // }
+  
+  // #main-frame {
+  //   margin-left: 10em;
+  //   margin-right: 10em;
+  // }
+  
+  // h3 {
+  //   background-color: #E7E7E7;
+  // }
+  
+  // #contact {
+  //   background-color: #FFFF;
+  // }
+  
+  // #hero {
+  //   padding-bottom: 40%;
+  //   display: flex;
+  //   justify-content: center;
+  //   flex-direction: column;
+  // }
+  
+  // #About{
+  //   margin-top: 6em;
+  // }
+  // #scrollDownArr {
+  //   position: absolute;
+  //   height: 4em;
+  //   width: 4em;
+  // }
+  
+  // #intro {
+  //   margin-bottom: 10em;
+  // }
+  
+  // .contacts-info {
+  //   font-weight: bold;
+  // }
+  
+  // #info-box, p, span {
+  //   display: flex;
+  //   justify-content: space-around;
+  //   background-color: #ffff;
+  // }
+  
+  
+  // #contact-contain {
+  //   font-weight: 50;
+  //   position: fixed;
+  //   bottom: 0;
+  //   margin: 0 25%;
+  //   height: 50px;
+  //   width: 52%;
+  //   border-radius: 3px;
+  //   background-color: #FFFFFF;
+  //   text-align: center;
+  //   transition: height 400ms ease-in;
+  // }
+  
+  // .article-des {
+  //   background-color: #E7E7E7;
+  // }
+  
+  // #contact-contain.slideIn {
+  //   // transform: translateY(90px);
+  //   height:125px;
+  // }
+  
+  // .arrow-bounce {
+  //   // text-align: center;
+  //   // margin: 8% 0;
+  //   -moz-animation: bounce 2s infinite;
+  //   -webkit-animation: bounce 2s infinite;
+  //   animation: bounce 2s infinite;
+  // }
+  
+  // @keyframes bounce {
+  //   0%, 20%, 50%, 80%, 100% {
+  //     transform: translateY(0);
+  //   }
+  //   40% {
+  //     transform: translateY(-30px);
+  //   }
+  //   60% {
+  //     transform: translateY(-15px);
+  //   }
+  // }
+  
+  
+  
+  
+  // //ABOUT
+  // .search {
+  //   width: 100%;
+  //   position: relative
+  // }
+  
+  // .searchTerm {
+  //   float: left;
+  //   width: 100%;
+  //   border: 3px solid #00B4CC;
+  //   padding: 5px;
+  //   height: 20px;
+  //   border-radius: 5px;
+  //   outline: none;
+  //   color: #9DBFAF;
+  // }
+  
+  // .searchTerm:focus{
+  //   color: #00B4CC;
+  // }
+  
+  // .searchButton {
+  //   position: absolute;  
+  //   right: -50px;
+  //   width: 40px;
+  //   height: 36px;
+  //   border: 1px solid #00B4CC;
+  //   background: #00B4CC;
+  //   text-align: center;
+  //   color: #fff;
+  //   border-radius: 5px;
+  //   cursor: pointer;
+  //   font-size: 20px;
+  // }
+  
+  // /*Resize the wrap to see the search bar change!*/
+  /*  .wrap{
+  //   width: 30%;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // } */ 
