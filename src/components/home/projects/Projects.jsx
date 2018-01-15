@@ -7,7 +7,7 @@ import ErrorBoundary from '../../ErrorBoundary.jsx';
 const Projects = () => {
   return (
     <ErrorBoundary>
-    <section id='projects-sec'>
+    <section id='projects-sec' className='sec-pad'>
       <Helium/>
       <FCS/>
       <FF/>

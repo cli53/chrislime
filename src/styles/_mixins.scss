@@ -2,3 +2,13 @@
   -webkit-text-size-adjust: $size;
 	-ms-text-size-adjust:     $size;
 }
+
+@mixin width-height($size) {
+  width: $size;
+  height: $size;
+}
+// @mixin section-padding($padding) {
+//   padding-right: $padding;
+//   padding-left: $padding;
+// }
+

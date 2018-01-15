@@ -8,7 +8,7 @@ const Hero = () => {
     <div id='hero'>
     <Intro key='intro'/>
     <div className ='arrow-bounce'>
-    <a href='#body-bio' className='fa fa-arrow-down fa-2x'><FaAngleDoubleDown id='scrollDownArr' /></a>
+    <a href='#mid-sec' className='fa fa-arrow-down fa-2x'><FaAngleDoubleDown id='scrollDownArr' /></a>
     </div>
     </div>
   )

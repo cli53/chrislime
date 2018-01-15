@@ -5,6 +5,7 @@ Partial Imports
 @import 'variables';
 @import 'mixins';
 @import 'contact';
+@import 'extend';
 
 /*--------------------------------------------------------------
 CSS Reset
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 // img {
@@ -50,14 +51,12 @@ Mobile
 }
 
 .nav {
-  text-decoration: none;
-  list-style: none;   
+  @extend %list-general;
 }
 
 #logo {
   grid-area: header;
-  height: 23em;
-  width: 23em;
+  @include width-height(23em);
   align-self: center;
 }
 
@@ -66,30 +65,46 @@ Mobile
 }
 
 .header-one {
-  font-size: 2em;
-  text-align: center;
+  font-size: 3em;
+  // text-align: center;
 }
 
 #red-dot {
-  color: #AB2835;
+  color: $red-dot;
 }
 
 #hero {
   grid-area: hero;
-  text-align: center;
+  // text-align: center;
+}
+
+#scrollDownArr {
+  @include width-height(40px);
+}
+
+#intro > p {
+  margin: 0 auto;
 }
 
 #mid-sec {
   grid-area: mid;
 }
+
 main {
   grid-area: main;
 }
 
+.sec-pad {
+  @extend %section-padding;
+}
 
+#hero {
+  text-align: center;
+}
 
-
-
+#projects-sec {
+  margin-bottom: 2em;
+}
 // @mixin headers-1{
 //   line-height: 1.2em;
 //   font-size: 4.7em;
