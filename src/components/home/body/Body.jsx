@@ -15,7 +15,6 @@ const Body = () => {
     <ErrorBoundary>
     <Projects/>
     <Login/>
-    {/* <Email/> */}
     </ErrorBoundary>
     </main>
     </React.Fragment>
