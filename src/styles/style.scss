@@ -61,17 +61,16 @@ iPhone 7 375 x 667 & iPhone 7 414 x 736 & iPhone 375 x 667 iPhone 8 plus
 
 .header-one {
   font-size: 3em;
-  // text-align: center;
 }
 
 #hero {
   grid-area: hero;
-  // text-align: center;
 }
 
 #scrollDownArr {
-  @include width-height(40px);
+  @include width-height(3em);
   animation: bounce 2.5s infinite;
+  color: $chris-red;
 }
 
   @keyframes bounce {
@@ -110,6 +109,10 @@ main {
   margin-bottom: 2em;
 }
 
+p.article-des {
+  font-size: 1.2em;
+}
+
 /*--------------------------------------------------------------
 Mobile
 iPhone 10 375 x 812
@@ -126,7 +129,6 @@ iPhone 10 375 x 812
 
       #scrollDownArr {
         position: relative;
-        // top: 2em;
         color: $chris-red;
         @include width-height(5em);
         animation: bounce 2.5s infinite;
