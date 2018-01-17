@@ -23,7 +23,7 @@ body {
 
 /*--------------------------------------------------------------
 Mobile
-iPhone 7 375 x 667 & iPhone 7 414 x 736 & iPhone 375 x 667 iPhone 8 plus
+Phone 7 plus & iPhone 8 plus 414 x 726
 --------------------------------------------------------------*/
 
 #root {
@@ -68,7 +68,7 @@ iPhone 7 375 x 667 & iPhone 7 414 x 736 & iPhone 375 x 667 iPhone 8 plus
 }
 
 #scrollDownArr {
-  @include width-height(3em);
+  @include width-height(4em);
   animation: bounce 2.5s infinite;
   color: $chris-red;
 }
@@ -112,6 +112,21 @@ main {
 p.article-des {
   font-size: 1.2em;
 }
+
+/*--------------------------------------------------------------
+Mobile
+iPhone 7/8 375 x 667
+--------------------------------------------------------------*/
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
+
+      .header-one {
+        font-size: 2.7em;
+      }
+     }
 
 /*--------------------------------------------------------------
 Mobile
