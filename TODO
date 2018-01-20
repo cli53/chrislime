@@ -1,0 +1,21 @@
+'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
+'Cmd/Ctrl+Enter' // Triggers `Todo: Toggle Box`
+'Alt+D' // Triggers `Todo: Toggle Done`
+'Alt+C' // Triggers `Todo: Toggle Cancel`
+'Alt+S' // Triggers `Todo: Start`
+
+'Todo: Open' // Open or create your project's todo file
+'Todo: Start' // Mark a todo as started
+'Todo: Toggle Box' // Toggle todo's box symbol
+'Todo: Toggle Cancel' // Toggle todo's done symbol
+'Todo: Toggle Done' // Toggle todo's cancel symbol
+'Todo: Archive' // Archive completed todos
+
+Todo: 
+☐ css 
+
+Archive:
+
+
+
+
