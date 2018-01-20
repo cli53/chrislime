@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <div id='hero'>
     <Intro key='intro'/>
-    <div class ='arrow-bounce'>
-    <a href='#body-bio' className='fa fa-arrow-down fa-2x'><FaAngleDoubleDown id='scrollDownArr' /></a>
+    <div className ='arrow-bounce'>
+    <a href='#mid-sec' className='fa fa-arrow-down fa-2x'><FaAngleDoubleDown id='scrollDownArr' /></a>
     </div>
     </div>
   )
