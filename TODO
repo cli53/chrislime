@@ -1,0 +1,13 @@
+'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
+'Cmd/Ctrl+Enter' // Triggers `Todo: Toggle Box`
+'Alt+D' // Triggers `Todo: Toggle Done`
+'Alt+C' // Triggers `Todo: Toggle Cancel`
+'Alt+S' // Triggers `Todo: Start`
+
+todos:
+  ☐ Fix route components
+  ☐ Codesplit Routes
+  ☐ Responsive Web
+  ☐ Content Development
+  ☐ ESLint
+  ☐ Proptypes
