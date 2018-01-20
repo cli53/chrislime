@@ -11,7 +11,6 @@ app.use(express.static('public'));
 
 
 app.post('/verify', (req, res) => {
-  debugger;
   console.log(req.body)
   if (req.body.username === 'chris' && req.body.password === 'li') {
   res.send('success');

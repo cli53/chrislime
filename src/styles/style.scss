@@ -23,7 +23,7 @@ body {
 
 /*--------------------------------------------------------------
 Mobile
-Phone 7 plus & iPhone 8 plus 414 x 726
+iPhone 7 plus & iPhone 8 plus 414 x 726
 --------------------------------------------------------------*/
 
 #root {
@@ -109,6 +109,10 @@ main {
   margin-bottom: 2em;
 }
 
+.project-title {
+  font-size: 2em;
+}
+
 p.article-des {
   font-size: 1.2em;
 }
@@ -147,6 +151,10 @@ iPhone 10 375 x 812
         color: $chris-red;
         @include width-height(5em);
         animation: bounce 2.5s infinite;
+      }
+
+      p.article-des {
+        font-size: 1.5em;
       }
 
     }

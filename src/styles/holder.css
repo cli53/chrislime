@@ -1,3 +1,5 @@
+/* Your markup components should state expectations of the data they require. PropTypes are great for this. */
+
 /* #nav-contain {
   //   display: flex;
   //   justify-content: space-between;
@@ -73,7 +75,7 @@
   //   margin-right: 10em;
   // }
   
-  // h3 {
+  // p {
   //   background-color: #E7E7E7;
   // }
   

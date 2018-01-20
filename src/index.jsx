@@ -5,8 +5,9 @@ import App from './App.jsx';
 import './styles/style.scss';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter history={history}>
   <App/>
   </BrowserRouter>,
   document.getElementById('root')
 )
+
