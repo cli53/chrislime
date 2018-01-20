@@ -1,0 +1,22 @@
+#contact-contain {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    text-align: center;
+    opacity: .9;
+    transition: height 400ms ease-in;
+}
+
+.contacts-info {
+    font-weight: bold;
+}
+  
+
+    
+#contact-contain.slideIn {
+    height:125px;
+}
+  
