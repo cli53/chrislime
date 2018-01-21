@@ -5,9 +5,14 @@
 'Alt+S' // Triggers `Todo: Start`
 
 todos:
-  ☐ Fix route components
-  ☐ Codesplit Routes
-  ☐ Responsive Web
-  ☐ Content Development
-  ☐ ESLint
-  ☐ Proptypes
+  ☐ Fix route components @high 
+  ☐ Codesplit Routes @low
+  ☐ Responsive Web @critical 
+  ☐ Content Development @low
+  ☐ ESLint @low
+  ☐ Proptypes @high 
+  ☐ Git reformatting @critical 
+  ✔ Normalize CSS @done(18-01-20 18:32)
+
+  archive:
+    

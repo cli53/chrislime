@@ -2,6 +2,7 @@
 /*--------------------------------------------------------------
 Partial Imports
 --------------------------------------------------------------*/
+@import 'normalize';
 @import 'variables';
 @import 'mixins';
 @import 'contact';
@@ -11,7 +12,7 @@ Partial Imports
 CSS Reset
 --------------------------------------------------------------*/
 html {
-  font-family: sans-serif;
+  font-family: $primary-system-fts;
   color: $primary-color;
   background-color: $primary-bgc;
   @include text-size(100%);
@@ -26,16 +27,7 @@ Mobile
 iPhone 7 plus & iPhone 8 plus 414 x 726
 --------------------------------------------------------------*/
 
-#root {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header"
-                        "hero"
-                        "mid"
-                        "main"
-                        "about"
-                        "contact";
-}
+
 
 #nav-contain {
 	display: flex;
@@ -50,7 +42,6 @@ iPhone 7 plus & iPhone 8 plus 414 x 726
 }
 
 #logo {
-  grid-area: header;
   @include width-height(19em);
   align-self: center;
 }
@@ -60,12 +51,10 @@ iPhone 7 plus & iPhone 8 plus 414 x 726
 }
 
 .header-one {
-  font-size: 3em;
+  font-family: $header-font;
+  font-size: 3.3em;
 }
 
-#hero {
-  grid-area: hero;
-}
 
 #scrollDownArr {
   @include width-height(4em);
@@ -89,13 +78,6 @@ iPhone 7 plus & iPhone 8 plus 414 x 726
   margin: 0 auto;
 }
 
-#mid-sec {
-  grid-area: mid;
-}
-
-main {
-  grid-area: main;
-}
 
 .sec-pad {
   @extend %section-padding;
@@ -126,10 +108,11 @@ iPhone 7/8 375 x 667
     and (device-width : 375px) 
     and (device-height : 667px) 
     and (-webkit-device-pixel-ratio : 2) {
-
+      
       .header-one {
         font-size: 2.7em;
       }
+
      }
 
 /*--------------------------------------------------------------
@@ -146,6 +129,10 @@ iPhone 10 375 x 812
         padding-bottom: 1em;
       }
 
+      .header-one {
+        font-size: 3.2em;
+      }
+
       #scrollDownArr {
         position: relative;
         color: $chris-red;
@@ -159,3 +146,45 @@ iPhone 10 375 x 812
 
     }
 
+/*--------------------------------------------------------------
+Desktop Web
+--------------------------------------------------------------*/
+
+/* ----------- Non-Retina Screens ----------- */
+// @media (min-width: 700px) {
+    
+//     #root {
+//       display: grid;
+//       grid-column: 1fr;
+//       grid-template-areas: "main";
+//     }
+//     #main-frame {
+//       display: grid;
+//       grid-template-columns: repeat(12, [col-start] 1fr);
+//       grid-template-rows: repeat(6, [col-start] 1fr);
+//       grid-gap: 20px;
+//     }
+
+//     #About {
+//       display: block;
+//     }
+
+//     #logo {
+//       width: 5em;
+//       height: 5em;
+//   }
+//     #nav-contain {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: space-around;
+//     }
+
+// }
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}

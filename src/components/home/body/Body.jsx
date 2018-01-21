@@ -11,12 +11,12 @@ const Body = () => {
     <div id='mid-sec'>
     <Bio/>
     </div>
-    <main>
+    <article>
     <ErrorBoundary>
     <Projects/>
     <Login/>
     </ErrorBoundary>
-    </main>
+    </article>
     </React.Fragment>
 )
 };

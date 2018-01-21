@@ -4,7 +4,7 @@ const Intro = () => {
 
  return (
 <div id='intro'>
- <p className='header-one sec-pad'>I'm a New York based digital designer and software engineer.
+ <p className='header-one sec-pad'>Hello I'm Chris, an Front-end Engineer based in New York.
  </p>
  </div>
  )
