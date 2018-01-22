@@ -14,9 +14,9 @@ const Body = () => {
     <article>
     <ErrorBoundary>
     <Projects/>
-    <Login/>
     </ErrorBoundary>
     </article>
+    <Login/>
     </React.Fragment>
 )
 };
