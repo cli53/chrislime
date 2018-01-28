@@ -11,7 +11,9 @@ todos:
   ☐ Content Development @low
   ☐ ESLint @low
   ☐ Proptypes @high 
+  ☐ PWA @low 
   ☐ Git reformatting @critical 
+  ☐ Unit Testing @high 
   ✔ Normalize CSS @done(18-01-20 18:32)
 
   archive:
