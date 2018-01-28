@@ -14,7 +14,7 @@ todos:
   ☐ Proptypes @high 
   ☐ PWA @low 
   ☐ Git reformatting @critical 
-  ☐ Unit Testing @high 
+  ☐ Unit Testing (Enzyme & Jes)@high 
   ✔ Normalize CSS @done(18-01-20 18:32)
 
   archive:

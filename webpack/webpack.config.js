@@ -79,15 +79,22 @@ module.exports = {
     }
     ]  
   },
-  devServer: { historyApiFallback: true },
   // Any eval is for dev env
   // Any cheap or inline is for special cases like 3rd party tools
   // Any
   // devtool: 'nosources-source-map',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: path.join(__dirname, '../public'),
+    historyApiFallback: true,
+    compress: true,
+    hot: true,
+  },
   plugins: [
     HtmlWebpackPluginConfig,
     ExtractTextPluginConfig,
     UglifyJsPluginConfig,
+    new webpack.HotModuleReplacementPlugin(),
     // SWPrecacheWebpackPluginConfig
   ],
 }

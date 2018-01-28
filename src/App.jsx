@@ -5,7 +5,6 @@ import Routes from './components/routes.jsx';
 class App extends Component {
   constructor(props){
     super(props)
-    console.log(props)
     // console.log('inside THIS:', this)
     // "this" keyword is referring to the constructor function object so it holds the methods within the class, props, state object with it's properties, ref, reactInternal properties, and the updater obj which is based on the scheduler
     // THIS: Object { props: {}, context: undefined, refs: {}, updater: {…}, giphyCall: u/this.giphyCall(), giphyChange: u/this.giphyChange(), contactBar: u/this.contactBar() } 
