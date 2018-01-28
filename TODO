@@ -4,18 +4,18 @@
 'Alt+C' // Triggers `Todo: Toggle Cancel`
 'Alt+S' // Triggers `Todo: Start`
 
-'Todo: Open' // Open or create your project's todo file
-'Todo: Start' // Mark a todo as started
-'Todo: Toggle Box' // Toggle todo's box symbol
-'Todo: Toggle Cancel' // Toggle todo's done symbol
-'Todo: Toggle Done' // Toggle todo's cancel symbol
-'Todo: Archive' // Archive completed todos
 
-Todo: 
-☐ css 
+todos:
+  ☐ Fix route components @high 
+  ☐ Codesplit Routes @low
+  ☐ Responsive Web @critical 
+  ☐ Content Development @low
+  ☐ ESLint @low
+  ☐ Proptypes @high 
+  ☐ PWA @low 
+  ☐ Git reformatting @critical 
+  ☐ Unit Testing @high 
+  ✔ Normalize CSS @done(18-01-20 18:32)
 
-Archive:
-
-
-
-
+  archive:
+    
