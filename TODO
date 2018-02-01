@@ -6,16 +6,20 @@
 
 
 todos:
-  ☐ Fix route components @high 
   ☐ Codesplit Routes @low
-  ☐ Responsive Web @critical 
   ☐ Content Development @low
   ☐ ESLint @low
   ☐ Proptypes @high 
   ☐ PWA @low 
-  ☐ Git reformatting @critical 
+  ☐ HMR @high 
+  ☐ GraphQL/Apollo @low 
+  ☐ Fix Routes to go back @critical 
   ☐ Unit Testing (Enzyme & Jes)@high 
-  ✔ Normalize CSS @done(18-01-20 18:32)
 
   archive:
     
+
+Archive:
+  ✔ Responsive @critical @done(18-01-28 20:13)
+  ✔ Git reformatting @critical @done(18-01-28 20:11)
+  ✔ Normalize CSS @done(18-01-20 18:32)
