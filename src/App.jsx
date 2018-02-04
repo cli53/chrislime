@@ -16,12 +16,12 @@ class App extends Component {
 
     // `.bind` doesn’t modify the original function, it just returns a new function with the given context whenever it is called. 
     // The key here is that the constructor is only called once, not on every render. As oppose to binding the event handlers in the callbacks within the render function which will create a new function on every render and React renders often.
-    // this.contactBar = this.contactBar.bind(this);
+    // this.contactBar = this.contactBar.bind(this); //binding 'this' context of the constructor to the our methods
     // this.giphyCall = this.giphyCall.bind(this);
     // this.giphyChange = this.giphyChange.bind(this);
-
   }
     // Using 'public class fields syntax' to correctly bind callbacks with arrow function, ensuring 'this' is bound within the methods
+    //Arrow functions adopt the this binding of the enclosing scope (in other words, they don’t change the meaning of this), so things just work automatically.
     giphyCall = () => {
    fetch(`https://api.giphy.com/v1/gifs/search?api_key=1407a89874814d21a7d7c728b08138d5&q=${this.state.giphyInput}&limit=30&offset=0&rating=R&lang=en`)
     .then(res => {
@@ -36,7 +36,8 @@ class App extends Component {
         console.log(err);
     });
   
-  }
+  // }
+
   giphyChange = (event) => {
     this.setState({
       giphyInput: event.target.value,

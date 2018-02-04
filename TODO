@@ -10,11 +10,13 @@ todos:
   ☐ Content Development @low
   ☐ ESLint @low
   ☐ Proptypes @high 
-  ☐ PWA @low 
+  ☐ PWA @low
+  ☐ Websockets @low
   ☐ HMR @high 
   ☐ GraphQL/Apollo @low 
   ☐ Fix Routes to go back @critical 
   ☐ Unit Testing (Enzyme & Jes)@high 
+  ☐ Contact info with backend @low 
 
   archive:
     
