@@ -5,7 +5,7 @@
 'Alt+S' // Triggers `Todo: Start`
 
 
-todos:
+Todos:
   ☐ Codesplit Routes @low
   ☐ Content Development @low
   ☐ ESLint @low
@@ -14,14 +14,12 @@ todos:
   ☐ Websockets @low
   ☐ HMR @high 
   ☐ GraphQL/Apollo @low 
-  ☐ Fix Routes to go back @critical 
   ☐ Unit Testing (Enzyme & Jes)@high 
   ☐ Contact info with backend @low 
-
-  archive:
     
 
 Archive:
+  ✔ Fix Routes to go back @critical @done(18-02-04 13:08)
   ✔ Responsive @critical @done(18-01-28 20:13)
   ✔ Git reformatting @critical @done(18-01-28 20:11)
   ✔ Normalize CSS @done(18-01-20 18:32)
