@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Contact({ contactVis, contactBar }) {
   return (
@@ -11,4 +12,9 @@ export default function Contact({ contactVis, contactBar }) {
       </div>
       </div>
   )
+}
+
+Contact.propTypes = {
+  contactVis:PropTypes.bool,
+  contactBar: PropTypes.func,
 }
