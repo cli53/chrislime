@@ -94,6 +94,9 @@ module.exports = {
     HtmlWebpackPluginConfig,
     ExtractTextPluginConfig,
     UglifyJsPluginConfig,
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
     new webpack.HotModuleReplacementPlugin(),
     // SWPrecacheWebpackPluginConfig
   ],

@@ -9,16 +9,17 @@ Todos:
   ☐ Codesplit Routes @low
   ☐ Content Development @low
   ☐ ESLint @low
-  ☐ Proptypes @high 
   ☐ PWA @low
   ☐ Websockets @low
   ☐ HMR @high 
   ☐ GraphQL/Apollo @low 
-  ☐ Unit Testing (Enzyme & Jes)@high 
-  ☐ Contact info with backend @low 
+  ☐ Unit Testing (Enzyme & Jest)@high 
+  ☐ Contact info with backend @low
+  ☐ Maps in SCSS @low 
     
 
 Archive:
+  ✔ Proptypes @high @done(18-02-04 17:11)
   ✔ Fix Routes to go back @critical @done(18-02-04 13:08)
   ✔ Responsive @critical @done(18-01-28 20:13)
   ✔ Git reformatting @critical @done(18-01-28 20:11)
