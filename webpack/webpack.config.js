@@ -10,6 +10,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ExtractTextPluginConfig = new ExtractTextPlugin('styles.css');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+  title: 'chrislime',
   template: './src/index.html',
   filename: 'index.html',
   inject: 'body' //inject scripts before body closing tag
