@@ -11,6 +11,8 @@ const ExtractTextPluginConfig = new ExtractTextPlugin('styles.css');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   title: 'chrislime',
+  favicon: path.resolve(__dirname, '../images', 'favicon.ico'),
+  hash: true,
   template: './src/index.html',
   filename: 'index.html',
   inject: 'body' //inject scripts before body closing tag
@@ -20,7 +22,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
   entry: path.join(__dirname, '../src', 'index.jsx'),
   output: { 
-    path: path.resolve(__dirname, '../', 'public'),
+    path: path.resolve(__dirname, '../', 'dist'),
     filename: 'bundle.js',
     },
   module : {
