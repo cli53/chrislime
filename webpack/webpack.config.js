@@ -89,7 +89,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, '../public'),
     // Redirect back to localhost and then react router will place the correct route
-    historyApiFallback: true,
+    // historyApiFallback: true,
     compress: true,
     hot: true,
   },
@@ -100,7 +100,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(), //HMR with webpack-dev
     // SWPrecacheWebpackPluginConfig
   ],
 }

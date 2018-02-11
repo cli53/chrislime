@@ -11,7 +11,7 @@ Todos:
   ☐ ESLint @low
   ☐ PWA @low
   ☐ Websockets @low
-  ☐ HMR @high 
+  ☐ HMR @high
   ☐ GraphQL/Apollo @low 
   ☐ Unit Testing (Enzyme & Jest)@high 
   ☐ Contact info with backend @low
