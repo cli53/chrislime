@@ -5,17 +5,22 @@
 'Alt+S' // Triggers `Todo: Start`
 
 
-todos:
-  ☐ Fix route components @high 
+Todos:
   ☐ Codesplit Routes @low
-  ☐ Responsive Web @critical 
   ☐ Content Development @low
   ☐ ESLint @low
-  ☐ Proptypes @high 
-  ☐ PWA @low 
-  ☐ Git reformatting @critical 
-  ☐ Unit Testing @high 
-  ✔ Normalize CSS @done(18-01-20 18:32)
-
-  archive:
+  ☐ PWA @low
+  ☐ Websockets @low
+  ☐ HMR @high
+  ☐ GraphQL/Apollo @low 
+  ☐ Unit Testing (Enzyme & Jest)@high 
+  ☐ Contact info with backend @low
+  ☐ Maps in SCSS @low 
     
+
+Archive:
+  ✔ Proptypes @high @done(18-02-04 17:11)
+  ✔ Fix Routes to go back @critical @done(18-02-04 13:08)
+  ✔ Responsive @critical @done(18-01-28 20:13)
+  ✔ Git reformatting @critical @done(18-01-28 20:11)
+  ✔ Normalize CSS @done(18-01-20 18:32)

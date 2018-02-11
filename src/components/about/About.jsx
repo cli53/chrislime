@@ -4,6 +4,7 @@ const About = ({ giphyCall, giphyArr, giphyChange }) => {
 
   return (
   <React.Fragment>
+    <h1>ABOUT SOMETHING</h1>
   {/* <div className="wrap">
    <div className="search">
       <input type="text" className="searchTerm" placeholder="What are you looking for?" onChange={giphyChange}/>

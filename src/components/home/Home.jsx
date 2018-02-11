@@ -4,10 +4,10 @@ import Body from './body/Body.jsx';
 
 export default function Home() {
   return (
-  <React.Fragment>
-  <div id='background'></div>
-  <Hero/>
-  <Body/>
-  </React.Fragment>
+    <React.Fragment>
+      <div id="background" />
+      <Hero />
+      <Body />
+    </React.Fragment>
   );
 }

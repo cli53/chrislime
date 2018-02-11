@@ -10,6 +10,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ExtractTextPluginConfig = new ExtractTextPlugin('styles.css');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+  title: 'chrislime',
+  favicon: path.resolve(__dirname, '../images', 'favicon.ico'),
+  hash: true,
   template: './src/index.html',
   filename: 'index.html',
   inject: 'body' //inject scripts before body closing tag
@@ -19,7 +22,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
   entry: path.join(__dirname, '../src', 'index.jsx'),
   output: { 
-    path: path.resolve(__dirname, '../', 'public'),
+    path: path.resolve(__dirname, '../', 'dist'),
     filename: 'bundle.js',
     },
   module : {
@@ -79,15 +82,25 @@ module.exports = {
     }
     ]  
   },
-  devServer: { historyApiFallback: true },
   // Any eval is for dev env
   // Any cheap or inline is for special cases like 3rd party tools
-  // Any
   // devtool: 'nosources-source-map',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: path.join(__dirname, '../public'),
+    // Redirect back to localhost and then react router will place the correct route
+    // historyApiFallback: true,
+    compress: true,
+    hot: true,
+  },
   plugins: [
     HtmlWebpackPluginConfig,
     ExtractTextPluginConfig,
     UglifyJsPluginConfig,
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    new webpack.HotModuleReplacementPlugin(), //HMR with webpack-dev
     // SWPrecacheWebpackPluginConfig
   ],
 }
