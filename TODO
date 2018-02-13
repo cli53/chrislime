@@ -7,18 +7,20 @@
 
 Todos:
   ☐ Codesplit Routes @low
-  ☐ Content Development @low
-  ☐ ESLint @low
+  ☐ Content Development @high @started(18-02-11 17:18)
   ☐ PWA @low
+  ☐ Redux @low
   ☐ Websockets @low
-  ☐ HMR @high
+  ☐ HMR @high @started(18-02-11 17:19)
   ☐ GraphQL/Apollo @low 
   ☐ Unit Testing (Enzyme & Jest)@high 
   ☐ Contact info with backend @low
   ☐ Maps in SCSS @low 
-    
+  ☐ Postgres Database @critical 
+  ☐ Contact form @critical @started(18-02-12 16:08)
 
 Archive:
+  ✔ ESLint @low @done(18-02-11 17:18)
   ✔ Proptypes @high @done(18-02-04 17:11)
   ✔ Fix Routes to go back @critical @done(18-02-04 13:08)
   ✔ Responsive @critical @done(18-01-28 20:13)

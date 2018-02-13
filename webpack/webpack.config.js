@@ -24,24 +24,24 @@ module.exports = {
   output: { 
     path: path.resolve(__dirname, '../', 'dist'),
     filename: 'bundle.js',
-    },
-  module : {
+  },
+  module: {
     rules: [
       {
-      test: /\.jsx?$/,
-      loader: 'babel-loader',
-      exclude: /node_modules/,
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
       },
       {
-      test: /\.scss$/,
-      use: ExtractTextPlugin.extract({
-        fallback: "style-loader",
-        use: ['css-loader', 'sass-loader']
-      })
-    },
-    {
-      test: /\.(jpe?g|png|gif|svg)$/i,
-      use: [
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: ['css-loader', 'sass-loader']
+        })
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
         //  file-loader outputs image files and returns paths to them instead of inlining. This technique works with other assets types, such as fonts
         // {
         //   loader: 'file-loader', 
@@ -51,36 +51,36 @@ module.exports = {
         //     }
         //   }
         // },
-        {
-          loader: "url-loader", //The url-loader works like the file-loader, but can return a DataURL if the file is smaller than a byte limit. It emits your images as base64 strings within your JavaScript bundles. The process decreases the number of requests needed while growing the bundle size. It comes with a limit option that can be used to defer image generation to file-loader after a certain limit's reached. This way you can inline small files to your JavaScript bundles while generating separate files for the bigger ones.
-          options: {
-            limit: 8192, // setting a limit requires file-loader because that's the default fallback if it reaches over limit
-            }
-        },
-        {
-          loader: 'image-webpack-loader',
-          options: {
-            query: {
-              pngquant: {
-                quality: '65-90',
-                speed: 4,
-                input: Buffer
-              },
-              mozjpeg: {
-                progressive: true,
-              },
-              gifsicle: {
-                interlaced: true,
-              },
-              optipng: {
-                optimizationLevel: 7,
+          {
+            loader: "url-loader", //The url-loader works like the file-loader, but can return a DataURL if the file is smaller than a byte limit. It emits your images as base64 strings within your JavaScript bundles. The process decreases the number of requests needed while growing the bundle size. It comes with a limit option that can be used to defer image generation to file-loader after a certain limit's reached. This way you can inline small files to your JavaScript bundles while generating separate files for the bigger ones.
+            options: {
+              limit: 8192, // setting a limit requires file-loader because that's the default fallback if it reaches over limit
+            },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              query: {
+                pngquant: {
+                  quality: '65-90',
+                  speed: 4,
+                  input: Buffer,
+                },
+                mozjpeg: {
+                  progressive: true,
+                },
+                gifsicle: {
+                  interlaced: true,
+                },
+                optipng: {
+                  optimizationLevel: 7,
+                }
               }
             }
           }
-        }
-      ]
-    }
-    ]  
+        ]
+      }
+      ]  
   },
   // Any eval is for dev env
   // Any cheap or inline is for special cases like 3rd party tools
