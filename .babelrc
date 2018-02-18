@@ -21,6 +21,17 @@
         "react",
         "stage-0"
       ]
+      },
+      "test": {
+        "plugins": [
+          "transform-object-rest-spread",
+          "transform-regenerator"
+        ],
+      "presets" : [
+        "env",
+        "react",
+        "stage-0"
+      ]
       }
     }
   }
