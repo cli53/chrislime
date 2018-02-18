@@ -14,12 +14,6 @@
   "keywords": [
     "portfolio"
   ],
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    },
-    "moduleNameMapper": { "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js", "\\.(css|less)$": "<rootDir>/assetsTransformer.js" }
-  },
   "author": "Chris Li",
   "license": "ISC",
   "dependencies": {
@@ -29,7 +23,6 @@
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
-    "jest-cli": "^22.3.0",
     "node-sass": "^4.7.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
@@ -66,7 +59,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.0",
     "file-loader": "^1.1.6",
-    "identity-obj-proxy": "^3.0.0",
     "image-webpack-loader": "^4.0.0",
     "jest": "^22.3.0",
     "morgan": "^1.9.0",
