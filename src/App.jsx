@@ -29,6 +29,7 @@ class App extends Component {
       return { contactVisible: !prevState.contactVisible }
     })
  }
+
   render() {
     // With JSX you pass a function as the event handler, rather than a string.
     return (

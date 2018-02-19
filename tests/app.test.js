@@ -16,4 +16,18 @@ describe('React unit tests', () => {
       expect(appState).toEqual(false);
     })
   })
+
+  describe('<Footer/>', () => {
+    let wrapper;
+    let clickSpy;
+
+    it('Changes contactVis to true', () => {
+      clickSpy = sinon.spy();
+      wrapper = shallow(<Footer contactVis={true} contactBar={clickSpy}/>);
+      wrapper.simulate('click');
+      expect(wrapper.props().className).toEqual('slideOut');
+      expect(wrapper.childAt(0).name()).toBe('p');
+      expect(wrapper.childAt(0).text()).toBe('Contact');
+    })
+  }) 
 })

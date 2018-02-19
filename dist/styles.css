@@ -408,7 +408,7 @@ template {
 .contacts-info {
   font-weight: bold; }
 
-#contact-contain.slideIn {
+#contact-contain.slideOut {
   height: 125px; }
 
 .sec-pad {
