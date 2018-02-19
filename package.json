@@ -7,7 +7,7 @@
     "test": "jest",
     "webpack": "webpack --watch --config ./webpack/webpack.config.js",
     "start": "webpack --config ./webpack/webpack.config.js && nodemon server.js",
-    "webpack-dev": "webpack-dev-server --config ./webpack/webpack.config.js --color",
+    "webpack-dev": "webpack-dev-server --hot --config ./webpack/webpack.config.js --color",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

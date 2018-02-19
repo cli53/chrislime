@@ -1,11 +1,15 @@
 import React from 'react';
 import expect from 'expect';
 import sinon from 'sinon';
+// The shallow function in Enzyme does a shallow rendering to the DOM. Shallow rendering does not render any components nested within the Welcome component.
 import { shallow, render, mount } from 'enzyme';
+// Render react components and render it as JSON Objects
+import renderer from 'react-test-renderer';
+
 import Header from '../src/components/Header.jsx';
 import Footer from '../src/components/Footer.jsx';
 import App from '../src/App.jsx';
-// The shallow function in Enzyme does a shallow rendering to the DOM. Shallow rendering does not render any components nested within the Welcome component.
+
 
 describe('React unit tests', () => {
 
@@ -29,5 +33,9 @@ describe('React unit tests', () => {
       expect(wrapper.childAt(0).name()).toBe('p');
       expect(wrapper.childAt(0).text()).toBe('Contact');
     })
-  }) 
+  })
+
+  describe('Header component', )
+  
+
 })

@@ -91,7 +91,7 @@ module.exports = {
     // Redirect back to localhost and then react router will place the correct route
     // historyApiFallback: true,
     compress: true,
-    hot: true,
+    // hot: true,
   },
   plugins: [
     HtmlWebpackPluginConfig,
