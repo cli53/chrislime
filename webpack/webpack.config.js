@@ -20,10 +20,12 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 
 module.exports = {
-  entry: path.join(__dirname, '../src', 'index.jsx'),
+  entry: ['react-hot-loader/patch', path.join(__dirname, '../src', 'index.jsx'),
+  ], 
   output: { 
     path: path.resolve(__dirname, '../', 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -85,22 +87,25 @@ module.exports = {
   // Any eval is for dev env
   // Any cheap or inline is for special cases like 3rd party tools
   // devtool: 'nosources-source-map',
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, '../public'),
     // Redirect back to localhost and then react router will place the correct route
-    // historyApiFallback: true,
+    historyApiFallback: true,
     compress: true,
     // hot: true,
   },
   plugins: [
     HtmlWebpackPluginConfig,
     ExtractTextPluginConfig,
-    UglifyJsPluginConfig,
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
-    }),
-    new webpack.HotModuleReplacementPlugin(), //HMR with webpack-dev
+    new webpack.NamedModulesPlugin(),
+    // UglifyJsPluginConfig,
+    // new webpack.DefinePlugin({
+    //   'process.env.NODE_ENV': JSON.stringify('production')
+    // }),
+    // new webpack.HotModuleReplacementPlugin(), //HMR with webpack-dev
+    //Uncaught RangeError: Maximum call stack size exceeded
+    // When using WebpackDevServer CLI flag --hot, the plugin new HotModuleReplacementPlugin() should not be used and vice versa, they are mutually exclusive but the desired effect will work with any of them.
     // SWPrecacheWebpackPluginConfig
   ],
 }

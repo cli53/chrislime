@@ -3,7 +3,8 @@
       "production": {
         "plugins": [
         "transform-object-rest-spread",
-        "transform-regenerator"
+        "transform-regenerator",
+        "react-hot-loader/babel" 
         ],
         "presets" : [
           "env",
@@ -14,18 +15,21 @@
       "development": {
         "plugins": [
           "transform-object-rest-spread",
-          "transform-regenerator"
+          "transform-regenerator",
+          "react-hot-loader/babel" 
         ],
       "presets" : [
         "env",
         "react",
-        "stage-0"
+        "stage-0",
+        
       ]
       },
       "test": {
         "plugins": [
           "transform-object-rest-spread",
-          "transform-regenerator"
+          "transform-regenerator",
+          "react-hot-loader/babel" 
         ],
       "presets" : [
         "env",
