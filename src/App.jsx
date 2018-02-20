@@ -10,7 +10,6 @@ class App extends Component {
     // console.log('inside THIS:', this)
     // "this" keyword is referring to the constructor function object so it holds the methods within the class, props, state object with it's properties, ref, reactInternal properties, and the updater obj which is based on the scheduler
     // THIS: Object { props: {}, context: undefined, refs: {}, updater: {…}, giphyCall: u/this.giphyCall(), giphyChange: u/this.giphyChange(), contactBar: u/this.contactBar() }
-    console.log(this.state);
     this.state = {
       contactVisible: false,
       // giphyArr: [],
@@ -19,7 +18,7 @@ class App extends Component {
 
     // `.bind` doesn’t modify the original function, it just returns a new function with the given context whenever it is called.
     // The key here is that the constructor is only called once, not on every render. As oppose to binding the event handlers in the callbacks within the render function which will create a new function on every render and React renders often.
-    this.contactBar = this.contactBar.bind(this); // binding 'this' context of the constructor to the our methods
+    // this.contactBar = this.contactBar.bind(this); // binding 'this' context of the constructor to the our methods
     // this.giphyCall = this.giphyCall.bind(this);
     // this.giphyChange = this.giphyChange.bind(this);
   }
@@ -30,6 +29,7 @@ class App extends Component {
       return { contactVisible: !prevState.contactVisible }
     })
  }
+
   render() {
     // With JSX you pass a function as the event handler, rather than a string.
     return (

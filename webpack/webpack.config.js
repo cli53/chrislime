@@ -20,28 +20,30 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 
 module.exports = {
-  entry: path.join(__dirname, '../src', 'index.jsx'),
+  entry: ['react-hot-loader/patch', path.join(__dirname, '../src', 'index.jsx'),
+  ], 
   output: { 
     path: path.resolve(__dirname, '../', 'dist'),
     filename: 'bundle.js',
-    },
-  module : {
+    publicPath: '/',
+  },
+  module: {
     rules: [
       {
-      test: /\.jsx?$/,
-      loader: 'babel-loader',
-      exclude: /node_modules/,
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
       },
       {
-      test: /\.scss$/,
-      use: ExtractTextPlugin.extract({
-        fallback: "style-loader",
-        use: ['css-loader', 'sass-loader']
-      })
-    },
-    {
-      test: /\.(jpe?g|png|gif|svg)$/i,
-      use: [
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: ['css-loader', 'sass-loader']
+        })
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
         //  file-loader outputs image files and returns paths to them instead of inlining. This technique works with other assets types, such as fonts
         // {
         //   loader: 'file-loader', 
@@ -51,56 +53,59 @@ module.exports = {
         //     }
         //   }
         // },
-        {
-          loader: "url-loader", //The url-loader works like the file-loader, but can return a DataURL if the file is smaller than a byte limit. It emits your images as base64 strings within your JavaScript bundles. The process decreases the number of requests needed while growing the bundle size. It comes with a limit option that can be used to defer image generation to file-loader after a certain limit's reached. This way you can inline small files to your JavaScript bundles while generating separate files for the bigger ones.
-          options: {
-            limit: 8192, // setting a limit requires file-loader because that's the default fallback if it reaches over limit
-            }
-        },
-        {
-          loader: 'image-webpack-loader',
-          options: {
-            query: {
-              pngquant: {
-                quality: '65-90',
-                speed: 4,
-                input: Buffer
-              },
-              mozjpeg: {
-                progressive: true,
-              },
-              gifsicle: {
-                interlaced: true,
-              },
-              optipng: {
-                optimizationLevel: 7,
+          {
+            loader: "url-loader", //The url-loader works like the file-loader, but can return a DataURL if the file is smaller than a byte limit. It emits your images as base64 strings within your JavaScript bundles. The process decreases the number of requests needed while growing the bundle size. It comes with a limit option that can be used to defer image generation to file-loader after a certain limit's reached. This way you can inline small files to your JavaScript bundles while generating separate files for the bigger ones.
+            options: {
+              limit: 8192, // setting a limit requires file-loader because that's the default fallback if it reaches over limit
+            },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              query: {
+                pngquant: {
+                  quality: '65-90',
+                  speed: 4,
+                  input: Buffer,
+                },
+                mozjpeg: {
+                  progressive: true,
+                },
+                gifsicle: {
+                  interlaced: true,
+                },
+                optipng: {
+                  optimizationLevel: 7,
+                }
               }
             }
           }
-        }
-      ]
-    }
-    ]  
+        ]
+      }
+      ]  
   },
   // Any eval is for dev env
   // Any cheap or inline is for special cases like 3rd party tools
   // devtool: 'nosources-source-map',
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, '../public'),
     // Redirect back to localhost and then react router will place the correct route
-    // historyApiFallback: true,
+    historyApiFallback: true,
     compress: true,
-    hot: true,
+    // hot: true,
   },
   plugins: [
     HtmlWebpackPluginConfig,
     ExtractTextPluginConfig,
-    UglifyJsPluginConfig,
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
-    }),
-    new webpack.HotModuleReplacementPlugin(), //HMR with webpack-dev
+    new webpack.NamedModulesPlugin(),
+    // UglifyJsPluginConfig,
+    // new webpack.DefinePlugin({
+    //   'process.env.NODE_ENV': JSON.stringify('production')
+    // }),
+    // new webpack.HotModuleReplacementPlugin(), //HMR with webpack-dev
+    //Uncaught RangeError: Maximum call stack size exceeded
+    // When using WebpackDevServer CLI flag --hot, the plugin new HotModuleReplacementPlugin() should not be used and vice versa, they are mutually exclusive but the desired effect will work with any of them.
     // SWPrecacheWebpackPluginConfig
   ],
 }
