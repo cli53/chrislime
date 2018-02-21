@@ -8,6 +8,7 @@ import renderer from 'react-test-renderer';
 
 import Header from '../src/components/Header.jsx';
 import Footer from '../src/components/Footer.jsx';
+import Intro from '../src/components/home/hero/Intro.jsx';
 import App from '../src/App.jsx';
 
 
@@ -35,7 +36,12 @@ describe('React unit tests', () => {
     })
   })
 
-  describe('Header component', )
+  describe('Intro component', () => {
+    it('matches the snapshot', () => {
+      const tree = renderer.create(<Intro/>).toJSON();
+      expect(tree).toMatchSnapshot();
+    })
+  })
   
 
 })

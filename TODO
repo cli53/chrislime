@@ -17,9 +17,9 @@ Todos:
   ☐ Postgres Database @critical 
   ☐ Contact form @critical @started(18-02-12 16:08)
   ☐ Rebuild with Redux @critical 
-  ☐ Fix Logo on Mobile @critical @started(18-02-20 12:55)
 
 Archive:
+  ✔ Fix Logo on Mobile @critical @started(18-02-20 12:55) @done(18-02-20 23:08) @lasted(10 hours 13 minutes 2 seconds)
   ✔ HMR @high @started(18-02-11 17:19) @done(18-02-20 12:40) @lasted(8 days 19 hours 21 minutes 56 seconds)
   ✔ ESLint @low @done(18-02-11 17:18)
   ✔ Proptypes @high @done(18-02-04 17:11)
