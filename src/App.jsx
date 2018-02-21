@@ -34,9 +34,9 @@ class App extends Component {
     // With JSX you pass a function as the event handler, rather than a string.
     return (
       <main id="main-frame">
-      <Routes/>
       <Header/>
       <Footer contactVis={this.state.contactVisible} contactBar={this.contactBar}/>
+      <Routes/>
       </main>
   )
   }
