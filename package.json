@@ -35,7 +35,7 @@
     "sw-precache-webpack-plugin": "^0.11.4",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "^3.0.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.3",
