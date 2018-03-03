@@ -11,7 +11,6 @@ Todos:
   ☐ PWA @low
   ☐ Websockets @low
   ☐ GraphQL/Apollo @low 
-  ☐ Unit Testing (Enzyme & Jest)@high 
   ☐ Contact info with backend @low
   ☐ Maps in SCSS @low 
   ☐ Postgres Database @critical 
@@ -19,6 +18,7 @@ Todos:
   ☐ Rebuild with Redux @critical 
 
 Archive:
+  ✔ Unit Testing (Enzyme & Jest)@high @done(18-02-21 00:59)
   ✔ Fix Logo on Mobile @critical @started(18-02-20 12:55) @done(18-02-20 23:08) @lasted(10 hours 13 minutes 2 seconds)
   ✔ HMR @high @started(18-02-11 17:19) @done(18-02-20 12:40) @lasted(8 days 19 hours 21 minutes 56 seconds)
   ✔ ESLint @low @done(18-02-11 17:18)
