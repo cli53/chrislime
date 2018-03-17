@@ -7,7 +7,7 @@
     "test": "jest",
     "webpack": "webpack --watch --config ./webpack/webpack.config.js",
     "start": "webpack --config ./webpack/webpack.config.js && nodemon server.js",
-    "webpack-dev": "webpack-dev-server --hot --config ./webpack/webpack.config.js --color --progress",
+    "webpack-dev": "webpack-dev-server --hot --config ./webpack/webpack.config.js --color",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -41,8 +41,8 @@
     "@storybook/addon-actions": "^3.3.3",
     "@storybook/addon-links": "^3.3.3",
     "@storybook/react": "^3.3.3",
-    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-cli": "^6.26.0",
     "babel-jest": "^22.2.2",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

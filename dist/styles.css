@@ -402,7 +402,8 @@ template {
   border-radius: 3px;
   background-color: #FFFFFF;
   text-align: center;
-  opacity: .9;
+  opacity: .8;
+  z-index: 5;
   transition: height 400ms ease-in; }
 
 .contacts-info {
@@ -519,10 +520,7 @@ Desktop Web
   #main-frame {
     display: grid;
     grid-template-columns: [first] 10em [line2] 20em [line3] auto [line4] 20em [line5] 10em [end];
-    grid-template-rows: [nav-start] 10% [nav-end] 700px [hero-end] 700px [mid-end] auto [article-end] 300px [login-end]; }
-  #background {
-    grid-column: first / end;
-    grid-row: nav-start / hero-end; }
+    grid-template-rows: [nav-start] 10% [nav-end] 53em [hero-end] 700px [mid-end] auto [article-end] 300px [login-end]; }
   #About {
     display: block;
     font-family: "Nunito";
@@ -576,4 +574,4 @@ Desktop Web
 
 /* ----------- Retina Screens ----------- */
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
+/*# sourceMappingURL=styles.css.map*/

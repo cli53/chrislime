@@ -15,7 +15,7 @@ Todos:
   ☐ Maps in SCSS @low 
   ☐ Postgres Database @critical 
   ☐ Contact form @critical @started(18-02-12 16:08)
-  ☐ Rebuild with Redux @critical 
+  ☐ Rebuild with Redux @critical
 
 Archive:
   ✔ Unit Testing (Enzyme & Jest)@high @done(18-02-21 00:59)

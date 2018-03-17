@@ -4,7 +4,6 @@ import { Route, Redirect, Switch } from 'react-router-dom';
 // When the app’s location matches a certain path, Route will render a specified component, when it doesn’t, it will render null.
 import About from './about/About.jsx';
 import Home from './home/Home.jsx';
-import Secret from './Secret.jsx';
 
 export default function routes() {
   return (
@@ -12,7 +11,6 @@ export default function routes() {
           {/* When React Router renders a component, it passes that component three things: match, location, and history. */}
           {/* When the app’s location matches a certain path, Route will render a specified component, when it doesn’t, it will render null.  */}
           <Route path="/About" component={About} />
-          <Route path="/Secret" component={Secret} />
           <Route exact path="/" component={Home} />
           <Route render={() => <h1>Not Found</h1>} />
         </Switch>

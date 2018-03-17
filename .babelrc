@@ -21,7 +21,6 @@
         "env",
         "react",
         "stage-0"
-        
       ]
       },
       "test": {

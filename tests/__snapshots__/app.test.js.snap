@@ -7,7 +7,7 @@ exports[`React unit tests Intro component matches the snapshot 1`] = `
   <p
     className="header-one sec-pad"
   >
-    Hi! I'm Chris, an Front-end Engineer based in New York 
+    Hi! I'm Chris, Product Engineer based in NYC
     <span
       id="red-dot"
     >
