@@ -24,7 +24,6 @@ iPhone 7 plus & iPhone 8 plus 414 x 726
 --------------------------------------------------------------*/
 
 
-
 #nav-contain {
 	display: flex;
 	flex-direction: column;
@@ -151,11 +150,11 @@ Desktop Web
 
 /* ----------- Non-Retina Screens ----------- */
 @media (min-width: 700px) {
-  // @media screen 
+  // @media only screen 
   // and (min-device-width: 720px) 
   // and (max-device-width: 1600px) 
   // and (-webkit-min-device-pixel-ratio: 2)
-  //                                       { 
+                                        // { 
     
     #main-frame {
       display: grid;
@@ -164,18 +163,18 @@ Desktop Web
       //                       "section section section"
       //                       "article article article";
       grid-template-columns: [first] 10em [line2] 20em [line3] auto [line4] 20em [line5] 10em [end];
-      grid-template-rows: [nav-start] 10% [nav-end] 700px [hero-end] 700px [mid-end] auto [article-end] 300px [login-end];
+      grid-template-rows: [nav-start] 10% [nav-end] 53em [hero-end] 700px [mid-end] auto [article-end] 300px [login-end];
           
     }
 
-    #background {
-      grid-column: first / end;
-      grid-row: nav-start / hero-end;
-      // z-index: -1;
-      // background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-      // background-size: 400% 400%;
-      // animation: Gradient 15s ease infinite;
-    }
+    // #background {
+    //   grid-column: first / end;
+    //   grid-row: nav-start / hero-end;
+    //   // z-index: -1;
+    //   // background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    //   // background-size: 400% 400%;
+    //   // animation: Gradient 15s ease infinite;
+    // }
 
   
     // @keyframes Gradient {

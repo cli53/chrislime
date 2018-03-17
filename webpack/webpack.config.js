@@ -98,6 +98,7 @@ module.exports = {
   plugins: [
     HtmlWebpackPluginConfig,
     ExtractTextPluginConfig,
+    // display relative path of the module when HMR is enabled, suggested for dev env
     new webpack.NamedModulesPlugin(),
     // UglifyJsPluginConfig,
     // new webpack.DefinePlugin({
