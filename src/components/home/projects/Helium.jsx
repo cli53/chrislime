@@ -1,16 +1,19 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import heliumLogo from '../../../../assets/helium/heliumicon.png';
 import heliumSVG from '../../../../assets/helium/helium.svg';
 
 const Helium = () => {
   return (
   <article id='Helium-article'>
-  {/* <p className='project-title'>
+  <Fade bottom>
+  <p className='project-title'>
   <span id='helium-logo'>
-  <img className='project-logo'src={heliumLogo}></img> */}
-  <img id='helium-logo' className='project-logo'src={heliumSVG}></img>
-  {/* </span>Helium.js
-  </p> */}
+  <img className='project-logo'src={heliumLogo}></img>
+  {/* <img id='helium-logo' className='project-logo'src={heliumSVG}></img> */}
+  </span>Helium.js
+  </p>
+  </Fade>
   <p className='article-des'>
   Building Universal React Applications often comes with many challenges that include rendering, routing, data retrieval, sharing resources and maintaining consistency between the server and client. Helium.js is here to lighten the browser workload via server-side rendering. Our module offers all the benefits associated with server-side rendering such as improved Critical Rendering Path performance and Search Engine Optimization.
   </p>
