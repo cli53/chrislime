@@ -3,16 +3,21 @@ import React from 'react';
 import CSX from './CSX.jsx';
 import FCS from './FCS.jsx';
 import Helium from './Helium.jsx';
+import Fade from 'react-reveal/Fade';
 import ErrorBoundary from '../../ErrorBoundary.jsx';
 
 const Projects = () => {
   return (
     <ErrorBoundary>
     <section id='projects-sec' className='sec-pad'>
-      <p className='header-one'>Most Recent Project:</p>
+      <p className='header-one'>Recent projects:</p>
+      <Fade bottom>
+       {/* <Fade top cascade> */}
       <Helium/>
-      {/* <FCS/> */}
+      </Fade>
+      <Fade bottom>
       <CSX/>
+      </Fade>
     </section>
     </ErrorBoundary>
   )

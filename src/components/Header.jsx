@@ -22,16 +22,16 @@ export default function Nav() {
         <li id='right-header' className="nav" key={2}>
           <div id='right-icons'>
           <Flip left>
-          <a href='https://github.com/cli53' target='_blank'><img className="nav header-icons"src={github} alt="github"/></a>
+          <a href='https://github.com/cli53' target='_blank'><img className="nav header-icons" src={github} alt="github" title="github"/></a>
           </Flip>
 
            <Flip left>
-          <a href='https://www.linkedin.com/in/chrisdigitiali/' target='_blank'><img className="nav header-icons" src={linkedin} alt="linkedin"/></a>
+          <a href='https://www.linkedin.com/in/chrisdigitiali/' target='_blank'><img className="nav header-icons" src={linkedin} alt="linkedin" title="linkedin"/></a>
           </Flip>
 
 
           <Flip left>
-          <a href='mailto:chrisli@codesmith.io?Subject=Hi%20Chris!' target='_blank'><img className="nav header-icons" src={gmail} alt="gmail"/></a>
+          <a href='mailto:chrisli@codesmith.io?Subject=Hi%20Chris!' target='_blank'><img className="nav header-icons" src={gmail} alt="gmail" title="mail"/></a>
           </Flip>
           {/* <NavLink className="nav" id="About" to="/About">About</NavLink> */}
           </div>
