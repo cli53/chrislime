@@ -114,7 +114,10 @@ iPhone 7 plus & iPhone 8 plus 414 x 726
 }
 
 .project-logo {
+  position: relative;
+  top: 0.7rem;
   height: 50px;
+  margin-right: 1%;
 }
 
 #helium-logo {
@@ -203,7 +206,7 @@ Desktop Web
       //                       "section section section"
       //                       "article article article";
       grid-template-columns: [first] 10em [line2] 20em [line3] auto [line4] 20em [line5] 10em [end];
-      grid-template-rows: [nav-start] 10% [nav-end] 53em [hero-end] 700px [mid-end] auto [article-end] 300px [login-end];
+      grid-template-rows: [nav-start] 10% [nav-end] 53em [hero-end] 700px [mid-end] auto [article-end] 300px [footer-end];
           
     }
 
@@ -311,7 +314,15 @@ Desktop Web
 
     p.article-des {
       width: 60%;
-      line-height: 1.5em;
+      line-height: 1.6em;
+    }
+
+    footer {
+      grid-column: first / end;
+      grid-row: article-end / footer-end;
+      background-color: rgb(80, 66, 66);
+      display: flex;
+      flex-direction: column;
     }
 
 }

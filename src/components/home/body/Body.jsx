@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Bio from './Bio.jsx'
 import Personal from './Personal.jsx';
 import Projects from '../projects/Projects.jsx';
+import Footer from '../../Footer.jsx';
 import Login from './Login.jsx';
 import ErrorBoundary from '../../ErrorBoundary.jsx';
 import Email from './Email.jsx';
@@ -24,7 +25,9 @@ const Body = () => (
     <ErrorBoundary>
     <Projects/>
     </ErrorBoundary>
+    <Footer/>
     </article>
+
     {/* <Login/> */}
     </React.Fragment>
 );

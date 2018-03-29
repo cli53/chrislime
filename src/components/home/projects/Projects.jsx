@@ -1,7 +1,7 @@
 
 import React from 'react';
 import CSX from './CSX.jsx';
-import FCS from './FCS.jsx';
+import CS from './CS.jsx';
 import Helium from './Helium.jsx';
 import Fade from 'react-reveal/Fade';
 import ErrorBoundary from '../../ErrorBoundary.jsx';
@@ -17,6 +17,9 @@ const Projects = () => {
       </Fade>
       <Fade bottom>
       <CSX/>
+      </Fade>
+      <Fade bottom>
+      <CS/>
       </Fade>
     </section>
     </ErrorBoundary>
