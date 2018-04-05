@@ -4,6 +4,7 @@ import { Route, Redirect, Switch } from 'react-router-dom';
 // When the app’s location matches a certain path, Route will render a specified component, when it doesn’t, it will render null.
 import About from './about/About.jsx';
 import Home from './home/Home.jsx';
+import fourOFour from './404.jsx';
 
 export default function routes() {
   return (
@@ -12,7 +13,7 @@ export default function routes() {
           {/* When the app’s location matches a certain path, Route will render a specified component, when it doesn’t, it will render null.  */}
           <Route path="/About" component={About} />
           <Route exact path="/" component={Home} />
-          <Route render={() => <h1>Not Found</h1>} />
+          <Route component={fourOFour} />
         </Switch>
   );
 }

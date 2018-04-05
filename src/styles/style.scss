@@ -7,6 +7,7 @@ Partial Imports
 @import 'mixins';
 @import 'contact';
 @import 'extend';
+@import '404';
 
 /*--------------------------------------------------------------
 CSS Reset
@@ -322,7 +323,7 @@ Desktop Web
       grid-row: article-end / footer-end;
       display: flex;
       flex-direction: column;
-      // align-items: center;
+      align-items: center;
       // justify-content: space-between;
     }
 
@@ -331,6 +332,11 @@ Desktop Web
       flex-direction: row;
       justify-content: space-between;
       list-style-type: none;
+      width: 600px;
+    }
+
+    #copyright {
+      font-size: 0.7em;
     }
 
 }

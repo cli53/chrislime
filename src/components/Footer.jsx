@@ -5,8 +5,8 @@ export default function Footer({ contactVis, contactBar }) {
   return (
     <footer>
       <ul id='footer-links'>
-        <li>linkedin</li>
-        <li>Github</li>
+        <li><a href='https://www.linkedin.com/in/chrisdigitiali/' target='_blank'>Linkedin</a></li>
+        <li><a href='https://github.com/cli53' target='_blank'>Github</a></li>
         <li>Ask me your questions!</li>
       </ul>
       <p id='copyright'>&copy; Chris Li. All rights reserved</p>
