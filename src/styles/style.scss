@@ -206,7 +206,7 @@ Desktop Web
       //                       "section section section"
       //                       "article article article";
       grid-template-columns: [first] 10em [line2] 20em [line3] auto [line4] 20em [line5] 10em [end];
-      grid-template-rows: [nav-start] 10% [nav-end] 53em [hero-end] 700px [mid-end] auto [article-end] 300px [footer-end];
+      grid-template-rows: [nav-start] 10% [nav-end] 53em [hero-end] 700px [mid-end] auto [article-end] 2em [footer-end];
           
     }
 
@@ -320,9 +320,17 @@ Desktop Web
     footer {
       grid-column: first / end;
       grid-row: article-end / footer-end;
-      background-color: rgb(80, 66, 66);
       display: flex;
       flex-direction: column;
+      // align-items: center;
+      // justify-content: space-between;
+    }
+
+    #footer-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style-type: none;
     }
 
 }
