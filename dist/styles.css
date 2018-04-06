@@ -561,7 +561,8 @@ Desktop Web
       opacity: 0; }
     to {
       opacity: 1; } }
-  #mid-sec {
+  #left
+  -sec {
     grid-column: line2 / line3;
     grid-row: hero-end / article-end;
     width: 280px; }

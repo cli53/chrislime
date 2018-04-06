@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Routes from './components/routes.jsx';
+import Routes from './components/Routes.jsx';
 import Footer from './components/Footer.jsx';
 import Header from './components/Header.jsx';
 
@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <main id="main-frame">
       <Header/>
-      <Footer contactVis={this.state.contactVisible} contactBar={this.contactBar}/>
+      {/* <Footer contactVis={this.state.contactVisible} contactBar={this.contactBar}/> */}
       <Routes/>
       </main>
   )

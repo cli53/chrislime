@@ -1,5 +1,5 @@
 import React from 'react';
-//In the hero
+
 const Intro = () => {
 
  return (
