@@ -1,13 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export default function Footer({ contactVis, contactBar }) {
   return (
     <footer>
       <ul id='footer-links'>
-        <li><a href='https://www.linkedin.com/in/chrisdigitiali/' target='_blank'>Linkedin</a></li>
-        <li><a href='https://github.com/cli53' target='_blank'>Github</a></li>
-        <li>Ask me your questions!</li>
+        <li><a className='footer-url' href='https://www.linkedin.com/in/chrisdigitiali/' target='_blank'>Linkedin</a></li>
+        <li><a className='footer-url' href='https://github.com/cli53' target='_blank'>Github</a></li>
+        <li><NavLink to='/contact'>Ask me your questions!</NavLink></li>
       </ul>
       <p id='copyright'>&copy; Chris Li. All rights reserved</p>
     </footer>

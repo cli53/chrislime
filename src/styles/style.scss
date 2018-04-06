@@ -333,8 +333,12 @@ Desktop Web
       justify-content: space-between;
       list-style-type: none;
       width: 600px;
+     a:link {
+      text-decoration: none;
+     }
     }
 
+    
     #copyright {
       font-size: 0.7em;
     }
