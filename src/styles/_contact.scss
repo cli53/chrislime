@@ -27,5 +27,39 @@
 #contact-form {
     display: flex;
     flex-direction: column;
+    width: 85%;
+    margin: 2em;
+    .form-input, textarea {
+        background: transparent;
+        border: none;
+        resize: none;
+        margin: .5em;
+    }
 }
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#contact-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: skyblue;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#contact-header-img {
+    margin: 1em;
+}
+
+#contact-header {
+    font-size: 2em;
+    font-family: $header-font;
+    color: $primary-color;
+}
+
   

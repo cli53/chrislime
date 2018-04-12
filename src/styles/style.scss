@@ -2,22 +2,15 @@
 /*--------------------------------------------------------------
 Partial Imports
 --------------------------------------------------------------*/
-@import 'normalize';
 @import 'variables';
+@import 'normalize';
 @import 'mixins';
-@import 'contact';
 @import 'extend';
 @import '404';
+@import 'base';
+@import 'contact';
 
-/*--------------------------------------------------------------
-CSS Reset
---------------------------------------------------------------*/
-html {
-  font-family: $primary-system-fts;
-  color: $primary-color;
-  background-color: $primary-bgc;
-  @include text-size(100%);
-}
+
 
 /*--------------------------------------------------------------
 Mobile
