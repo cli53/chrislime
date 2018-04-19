@@ -35,7 +35,13 @@
         resize: none;
         margin: .5em;
     }
+    #form-button {
+        width: 200px;
+        border-radius: 
+    }
 }
+
+
 
 #contact-section {
     display: flex;
@@ -61,5 +67,6 @@
     font-family: $header-font;
     color: $primary-color;
 }
+
 
   
