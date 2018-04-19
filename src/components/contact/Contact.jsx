@@ -9,6 +9,7 @@
 
 import React, { Component } from 'react';
 import Form from './Form.jsx';
+import Mail from '../../../assets/misc/contactmail.png';
 
 class Contact extends Component {
     constructor(props) {
@@ -18,8 +19,11 @@ class Contact extends Component {
     render() { 
         return ( 
             <section id='contact'>
-            <h1>Contact</h1>
-            <p>Your questions and special request are always welcome</p>
+            <div id='contact-banner'>
+            <h1 id='contact-header'>Contact Me</h1>
+            <p>Your questions and special request are always welcome.</p>
+            <img id='contact-header-img' src={Mail} alt="mail"/>
+            </div>
             <Form/>
             </section>
          )

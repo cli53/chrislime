@@ -38,6 +38,8 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
+          //The CSS loader takes a CSS file and returns the CSS with imports and url(...) resolved via webpack's require functionality:
+          // The style loader takes CSS and actually inserts it into the page so that the styles are active on the page.
           use: ['css-loader', 'sass-loader']
         })
       },
