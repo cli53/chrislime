@@ -36,8 +36,12 @@
         margin: .5em;
     }
     #form-button {
-        width: 200px;
-        border-radius: 
+        display: block;
+        border: 0;
+        border-radius: 50px;
+        height:100px;
+        background: url('../../assets/misc/mailsent.png');
+        width: 400px;
     }
 }
 
