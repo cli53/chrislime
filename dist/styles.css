@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);/*--------------------------------------------------------------
 Partial Imports
 --------------------------------------------------------------*/
+/* FONT */
+/* COLOR */
 /**
 
 Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
@@ -392,26 +394,6 @@ template {
 [hidden] {
   display: none; }
 
-/* FONT */
-/* COLOR */
-#contact-contain {
-  position: fixed;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  border-radius: 3px;
-  background-color: #FFFFFF;
-  text-align: center;
-  opacity: .8;
-  z-index: 5;
-  transition: height 400ms ease-in; }
-
-.contacts-info {
-  font-weight: bold; }
-
-#contact-contain.slideOut {
-  height: 125px; }
-
 .sec-pad {
   padding-left: 15px;
   padding-right: 15px; }
@@ -420,15 +402,58 @@ template {
   text-decoration: none;
   list-style: none; }
 
-/*--------------------------------------------------------------
-CSS Reset
---------------------------------------------------------------*/
+#404 {
+  background-size: cover; }
+
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, U buntu, Cantarell, "Helvetica Neue", sans-serif;
-  color: #39383a;
+  color: #454545;
   background-color: #E7E7E7;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
+
+#contact {
+  grid-column: line3 / line4;
+  grid-row: nav-end / hero-end; }
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 2em; }
+  #contact-form .form-input, #contact-form textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    margin: .5em; }
+  #contact-form #form-button {
+    display: block;
+    border: 0;
+    border-radius: 50px;
+    height: 100px;
+    background: url(data:image/png;base64,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);
+    width: 400px; }
+
+#contact-section {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 0px 0px 5px 5px; }
+
+#contact-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: skyblue;
+  border-radius: 5px 5px 0px 0px; }
+
+#contact-header-img {
+  margin: 1em; }
+
+#contact-header {
+  font-size: 2em;
+  font-family: "Nunito";
+  color: #454545; }
 
 /*--------------------------------------------------------------
 Mobile
@@ -452,6 +477,16 @@ iPhone 7 plus & iPhone 8 plus 414 x 726
 .header-one {
   font-family: "Nunito";
   font-size: 3.3em; }
+
+.header-icons {
+  height: 50px;
+  margin: 1em; }
+  .header-icons:hover {
+    transform: scale(1.3); }
+
+#right-icons {
+  display: flex;
+  justify-content: space-between; }
 
 #red-dot {
   color: #AB2835; }
@@ -481,9 +516,32 @@ iPhone 7 plus & iPhone 8 plus 414 x 726
 
 .project-title {
   font-size: 2em; }
+  .project-title a {
+    color: #454545;
+    text-decoration: none; }
+  .project-title:hover {
+    text-decoration: underline; }
+
+.project-logo {
+  position: relative;
+  top: 0.7rem;
+  height: 50px;
+  margin-right: 1%; }
+
+#helium-logo {
+  height: 200px; }
 
 p.article-des {
   font-size: 1.2em; }
+
+#mug-icon {
+  height: 50px; }
+
+#dog-icon {
+  height: 50px; }
+
+#sun-icon {
+  height: 50px; }
 
 /*--------------------------------------------------------------
 Mobile
@@ -520,13 +578,13 @@ Desktop Web
   #main-frame {
     display: grid;
     grid-template-columns: [first] 10em [line2] 20em [line3] auto [line4] 20em [line5] 10em [end];
-    grid-template-rows: [nav-start] 10% [nav-end] 53em [hero-end] 700px [mid-end] auto [article-end] 300px [login-end]; }
+    grid-template-rows: [nav-start] 10% [nav-end] 53em [hero-end] 700px [mid-end] auto [article-end] 2em [footer-end]; }
   #About {
     display: block;
     font-family: "Nunito";
     font-size: 1.5em;
     padding-right: 1em;
-    color: #39383a;
+    color: #454545;
     transition: color 500ms ease;
     transition: all .2s ease-in; }
     #About:hover {
@@ -537,6 +595,8 @@ Desktop Web
     text-align: left;
     align-self: center;
     width: 400px; }
+  .arrow-bounce {
+    margin-bottom: 100px; }
   #logo {
     width: 6em;
     height: 6em;
@@ -561,17 +621,37 @@ Desktop Web
       opacity: 0; }
     to {
       opacity: 1; } }
-  #left
-  -sec {
+  #left-sec {
     grid-column: line2 / line3;
     grid-row: hero-end / article-end;
+    width: 280px; }
+  #right-sec {
+    grid-column: line4 / line5;
+    grid-row: hero-end / article-end;
+    text-align: right;
     width: 280px; }
   article {
     grid-column: line2 / line5;
     grid-row: mid-end / article-end; }
-  #login-form {
-    grid-column: line2 / line5;
-    grid-row: article-end / login-end; } }
+  p.article-des {
+    width: 60%;
+    line-height: 1.6em; }
+  footer {
+    grid-column: first / end;
+    grid-row: article-end / footer-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 600px; }
+    #footer-links a:link {
+      text-decoration: none; }
+  #copyright {
+    font-size: 0.7em; } }
 
 /* ----------- Retina Screens ----------- */
 
