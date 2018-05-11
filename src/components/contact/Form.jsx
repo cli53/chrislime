@@ -20,8 +20,7 @@ const Form = () => {
             <input className='form-input' type="text" name="phone" placeholder="Phone Number" />
             <input className='form-input' type="email" name="_replyto" placeholder="Email" required/>
             <textarea name="textarea" placeholder="Leave a message"></textarea>
-            {/* <input id='form-button' type="submit" value="Send"></input> */}
-            <button type="submit"><img src={mailSent} alt="Send Button"/></button>
+            <input id='form-button' type="submit" value="Send"></input>
         </form>
         </section>
     )

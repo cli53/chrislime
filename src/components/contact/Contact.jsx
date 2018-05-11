@@ -16,15 +16,25 @@ class Contact extends Component {
         super(props);
         this.state = {  }
     }
+    // resets the page to the top
+    componentDidMount() {
+        window.scrollTo(0, 0);
+      }
+
     render() { 
+        const pageStyle = {
+
+        }
         return ( 
             <section id='contact'>
+            <div id='contact-full'>
             <div id='contact-banner'>
             <h1 id='contact-header'>Contact Me</h1>
             <p>Your questions and special request are always welcome.</p>
             <img id='contact-header-img' src={Mail} alt="mail"/>
             </div>
             <Form/>
+            </div>
             </section>
          )
     }
