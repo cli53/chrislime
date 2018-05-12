@@ -11,7 +11,7 @@ import React from 'react';
 import mailSent from '../../../assets/misc/mailsent.png';
 
 
-const Form = () => {
+const Form = ({ handleSubmit, sent }) => {
     return (
         <section id="contact-section">
         <form id="contact-form" action="https://formspree.io/licmike75@gmail.com" method="POST">
@@ -20,7 +20,7 @@ const Form = () => {
             <input className='form-input' type="text" name="phone" placeholder="Phone Number" />
             <input className='form-input' type="email" name="_replyto" placeholder="Email" required/>
             <textarea name="textarea" placeholder="Leave a message"></textarea>
-            <input id='form-button' type="submit" value="Send"></input>
+            <input id='form-button' onClick={handleSubmit} type="submit" value={sent ? 'Submitted' : 'Send'}></input>
         </form>
         </section>
     )
