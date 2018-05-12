@@ -25,7 +25,7 @@ const Body = () => (
     <ErrorBoundary>
     <Projects/>
     </ErrorBoundary>
-    <Footer/>
+    {/* <Footer/> */}
     </article>
 
     {/* <Login/> */}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-
 class Form extends Component {
   constructor(props) {
     super(props)
@@ -34,13 +33,13 @@ class Form extends Component {
   }
 
   changeUsername(event) {
-    console.log(this.state.username)
+    console.log(this.state.username);
     this.setState({
       username: event.target.value
     })
   }
   changePassword(event) {
-    console.log(this.state.password)
+    console.log(this.state.password);
     this.setState({
       password: event.target.value
     })
