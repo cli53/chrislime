@@ -35,8 +35,8 @@ class App extends Component {
     return (
       <main id="main-frame">
       <Header/>
-      {/* <Footer contactVis={this.state.contactVisible} contactBar={this.contactBar}/> */}
       <Routes/>
+      <Footer/>
       </main>
   )
   }

@@ -7,10 +7,10 @@
  * Copyright (c) 2018 Your Company
  */
 
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Form from './Form.jsx';
 import Mail from '../../../assets/misc/contactmail.png';
-
+import Info from './Info.jsx';
 class Contact extends Component {
     constructor(props) {
         super(props);
@@ -25,7 +25,8 @@ class Contact extends Component {
         const pageStyle = {
 
         }
-        return ( 
+        return (
+            <Fragment>
             <section id='contact'>
             <div id='contact-full'>
             <div id='contact-banner'>
@@ -36,6 +37,8 @@ class Contact extends Component {
             <Form/>
             </div>
             </section>
+            <Info/>
+            </Fragment> 
          )
     }
 }
