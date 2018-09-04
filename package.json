@@ -20,7 +20,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "enzyme": "^3.5.1",
-    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-adapter-react-16": "^1.4.0",
     "express": "^4.16.2",
     "node-sass": "^4.7.2",
     "npm": "^6.0.1",
