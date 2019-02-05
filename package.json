@@ -70,7 +70,7 @@
     "style-loader": "^0.20.0",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "url-loader": "^0.6.2",
-    "webpack-cli": "^2.0.13",
+    "webpack-cli": "^3.2.2",
     "webpack-dev-middleware": "^2.0.5"
   }
 }
