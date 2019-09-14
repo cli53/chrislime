@@ -39,7 +39,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "^5.2.0",
     "@storybook/addon-links": "^5.2.0",
-    "@storybook/react": "^3.3.3",
+    "@storybook/react": "^5.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.2.2",
