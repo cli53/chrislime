@@ -34,7 +34,7 @@
     "sinon": "^4.3.0",
     "sw-precache-webpack-plugin": "^0.11.4",
     "webpack": "^4.4.1",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-dev-server": "^3.10.2"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.3",
