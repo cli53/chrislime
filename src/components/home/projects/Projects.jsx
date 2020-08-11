@@ -3,6 +3,7 @@ import React from 'react';
 import CSX from './CSX.jsx';
 import CS from './CS.jsx';
 import Helium from './Helium.jsx';
+import LearnVest from './LearnVest.jsx'
 import Fade from 'react-reveal/Fade';
 import ErrorBoundary from '../../ErrorBoundary.jsx';
 
@@ -11,6 +12,9 @@ const Projects = () => {
     <ErrorBoundary>
     <section id='projects-sec' className='sec-pad'>
       <p className='header-one'>Recent projects:</p>
+      <Fade bottom>
+      <LearnVest/>
+      </Fade>
       <Fade bottom>
        {/* <Fade top cascade> */}
       <Helium/>
